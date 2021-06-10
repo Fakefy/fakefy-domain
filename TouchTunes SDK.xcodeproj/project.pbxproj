@@ -3,12 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		67923EB926729D8A0056FCC8 /* TouchTunes_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */; };
-		67923EBE26729D8A0056FCC8 /* touchtunes_sdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EBD26729D8A0056FCC8 /* touchtunes_sdkTests.swift */; };
+		67923EBE26729D8A0056FCC8 /* SearchNetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EBD26729D8A0056FCC8 /* SearchNetworkSpec.swift */; };
+		67923ED22672A61F0056FCC8 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED12672A61F0056FCC8 /* SearchAPI.swift */; };
+		67923ED42672A7040056FCC8 /* ITunesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED32672A7040056FCC8 /* ITunesConfig.swift */; };
+		67923ED82672A8B50056FCC8 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED72672A8B50056FCC8 /* SearchResult.swift */; };
+		67923EDA2672B2AF0056FCC8 /* SearchNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED92672B2AF0056FCC8 /* SearchNetwork.swift */; };
+		67923EDE2672B5AE0056FCC8 /* ITunesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EDD2672B5AE0056FCC8 /* ITunesError.swift */; };
+		67923EE02672B7B30056FCC8 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EDF2672B7B30056FCC8 /* BaseResponse.swift */; };
+		67923EE32672B9B70056FCC8 /* NetworkFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EE22672B9B70056FCC8 /* NetworkFactory.swift */; };
+		67923EE52672BD550056FCC8 /* SearchBusiness.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EE42672BD550056FCC8 /* SearchBusiness.swift */; };
+		67923EE82672C1530056FCC8 /* BusinessFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EE72672C1530056FCC8 /* BusinessFactory.swift */; };
+		67923EED2672D4E10056FCC8 /* SearchBusinessSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EEB2672D3E20056FCC8 /* SearchBusinessSpec.swift */; };
 		8A43435AB6DBA368E24339C8 /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE2C5B8522A24B496CF10C /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework */; };
 		B37C63E17477DAA2198DCF40 /* Pods_TouchTunes_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A8BC0A0C1EB63EE03A682F /* Pods_TouchTunes_SDK.framework */; };
 /* End PBXBuildFile section */
@@ -29,8 +39,18 @@
 		67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchTunes_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67923EB326729D8A0056FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67923EB826729D8A0056FCC8 /* TouchTunes SDK Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchTunes SDK Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		67923EBD26729D8A0056FCC8 /* touchtunes_sdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = touchtunes_sdkTests.swift; sourceTree = "<group>"; };
+		67923EBD26729D8A0056FCC8 /* SearchNetworkSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetworkSpec.swift; sourceTree = "<group>"; };
 		67923EBF26729D8A0056FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67923ED12672A61F0056FCC8 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		67923ED32672A7040056FCC8 /* ITunesConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesConfig.swift; sourceTree = "<group>"; };
+		67923ED72672A8B50056FCC8 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		67923ED92672B2AF0056FCC8 /* SearchNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNetwork.swift; sourceTree = "<group>"; };
+		67923EDD2672B5AE0056FCC8 /* ITunesError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesError.swift; sourceTree = "<group>"; };
+		67923EDF2672B7B30056FCC8 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
+		67923EE22672B9B70056FCC8 /* NetworkFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkFactory.swift; sourceTree = "<group>"; };
+		67923EE42672BD550056FCC8 /* SearchBusiness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBusiness.swift; sourceTree = "<group>"; };
+		67923EE72672C1530056FCC8 /* BusinessFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessFactory.swift; sourceTree = "<group>"; };
+		67923EEB2672D3E20056FCC8 /* SearchBusinessSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBusinessSpec.swift; sourceTree = "<group>"; };
 		81410A7B938E5E35A344684E /* Pods-TouchTunes SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK.debug.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK/Pods-TouchTunes SDK.debug.xcconfig"; sourceTree = "<group>"; };
 		96D2515AB858AC22D4A02299 /* Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8B362EC31947CAE0C166C8C /* Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -75,7 +95,6 @@
 				96D2515AB858AC22D4A02299 /* Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig */,
 				A8B362EC31947CAE0C166C8C /* Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -120,6 +139,10 @@
 		67923EC926729E750056FCC8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				67923ED52672A7130056FCC8 /* Config */,
+				67923ECD2672A5680056FCC8 /* Factory */,
+				67923ECE2672A56D0056FCC8 /* Business */,
+				67923ECF2672A5780056FCC8 /* Domain */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -143,9 +166,103 @@
 		67923ECC26729EAA0056FCC8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				67923EBD26729D8A0056FCC8 /* touchtunes_sdkTests.swift */,
+				67923EEA2672D3CF0056FCC8 /* Business */,
+				67923EE92672D3C80056FCC8 /* Network */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		67923ECD2672A5680056FCC8 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				67923EE62672C1360056FCC8 /* Business */,
+				67923EE12672B9A40056FCC8 /* Network */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		67923ECE2672A56D0056FCC8 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				67923EE42672BD550056FCC8 /* SearchBusiness.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		67923ECF2672A5780056FCC8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				67923ED02672A5FB0056FCC8 /* Search */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		67923ED02672A5FB0056FCC8 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				67923ED62672A8980056FCC8 /* Model */,
+				67923ED12672A61F0056FCC8 /* SearchAPI.swift */,
+				67923ED92672B2AF0056FCC8 /* SearchNetwork.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		67923ED52672A7130056FCC8 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				67923EDC2672B59A0056FCC8 /* Model */,
+				67923ED32672A7040056FCC8 /* ITunesConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		67923ED62672A8980056FCC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67923ED72672A8B50056FCC8 /* SearchResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67923EDC2672B59A0056FCC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67923EDD2672B5AE0056FCC8 /* ITunesError.swift */,
+				67923EDF2672B7B30056FCC8 /* BaseResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67923EE12672B9A40056FCC8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				67923EE22672B9B70056FCC8 /* NetworkFactory.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		67923EE62672C1360056FCC8 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				67923EE72672C1530056FCC8 /* BusinessFactory.swift */,
+			);
+			path = Business;
+			sourceTree = "<group>";
+		};
+		67923EE92672D3C80056FCC8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				67923EBD26729D8A0056FCC8 /* SearchNetworkSpec.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		67923EEA2672D3CF0056FCC8 /* Business */ = {
+			isa = PBXGroup;
+			children = (
+				67923EEB2672D3E20056FCC8 /* SearchBusinessSpec.swift */,
+			);
+			path = Business;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +328,7 @@
 				TargetAttributes = {
 					67923EAE26729D8A0056FCC8 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					67923EB726729D8A0056FCC8 = {
 						CreatedOnToolsVersion = 12.5;
@@ -322,6 +440,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67923EDE2672B5AE0056FCC8 /* ITunesError.swift in Sources */,
+				67923EDA2672B2AF0056FCC8 /* SearchNetwork.swift in Sources */,
+				67923EE32672B9B70056FCC8 /* NetworkFactory.swift in Sources */,
+				67923EE52672BD550056FCC8 /* SearchBusiness.swift in Sources */,
+				67923EE82672C1530056FCC8 /* BusinessFactory.swift in Sources */,
+				67923ED42672A7040056FCC8 /* ITunesConfig.swift in Sources */,
+				67923EE02672B7B30056FCC8 /* BaseResponse.swift in Sources */,
+				67923ED82672A8B50056FCC8 /* SearchResult.swift in Sources */,
+				67923ED22672A61F0056FCC8 /* SearchAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +456,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67923EBE26729D8A0056FCC8 /* touchtunes_sdkTests.swift in Sources */,
+				67923EED2672D4E10056FCC8 /* SearchBusinessSpec.swift in Sources */,
+				67923EBE26729D8A0056FCC8 /* SearchNetworkSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +599,7 @@
 			baseConfigurationReference = 81410A7B938E5E35A344684E /* Pods-TouchTunes SDK.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -491,6 +620,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -501,6 +631,7 @@
 			baseConfigurationReference = C96A171530CE5D81203B00F5 /* Pods-TouchTunes SDK.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +661,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 96D2515AB858AC22D4A02299 /* Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FQU58AQ88;
 				INFOPLIST_FILE = "sdk-tests/Supporting Files/Info.plist";
@@ -549,6 +681,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A8B362EC31947CAE0C166C8C /* Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FQU58AQ88;
 				INFOPLIST_FILE = "sdk-tests/Supporting Files/Info.plist";
