@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		67923EB926729D8A0056FCC8 /* TouchTunes_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */; };
 		67923EBE26729D8A0056FCC8 /* touchtunes_sdkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EBD26729D8A0056FCC8 /* touchtunes_sdkTests.swift */; };
+		8A43435AB6DBA368E24339C8 /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE2C5B8522A24B496CF10C /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework */; };
+		B37C63E17477DAA2198DCF40 /* Pods_TouchTunes_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A8BC0A0C1EB63EE03A682F /* Pods_TouchTunes_SDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,11 +24,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47A8BC0A0C1EB63EE03A682F /* Pods_TouchTunes_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchTunes_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FEE2C5B8522A24B496CF10C /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchTunes_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67923EB326729D8A0056FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67923EB826729D8A0056FCC8 /* TouchTunes SDK Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchTunes SDK Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67923EBD26729D8A0056FCC8 /* touchtunes_sdkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = touchtunes_sdkTests.swift; sourceTree = "<group>"; };
 		67923EBF26729D8A0056FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81410A7B938E5E35A344684E /* Pods-TouchTunes SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK.debug.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK/Pods-TouchTunes SDK.debug.xcconfig"; sourceTree = "<group>"; };
+		96D2515AB858AC22D4A02299 /* Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8B362EC31947CAE0C166C8C /* Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C96A171530CE5D81203B00F5 /* Pods-TouchTunes SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK.release.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK/Pods-TouchTunes SDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B37C63E17477DAA2198DCF40 /* Pods_TouchTunes_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,18 +51,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				67923EB926729D8A0056FCC8 /* TouchTunes_SDK.framework in Frameworks */,
+				8A43435AB6DBA368E24339C8 /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18DB5248500D93552BE2249F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47A8BC0A0C1EB63EE03A682F /* Pods_TouchTunes_SDK.framework */,
+				5FEE2C5B8522A24B496CF10C /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		260B9629551F77444E14309F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81410A7B938E5E35A344684E /* Pods-TouchTunes SDK.debug.xcconfig */,
+				C96A171530CE5D81203B00F5 /* Pods-TouchTunes SDK.release.xcconfig */,
+				96D2515AB858AC22D4A02299 /* Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig */,
+				A8B362EC31947CAE0C166C8C /* Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		67923EA526729D8A0056FCC8 = {
 			isa = PBXGroup;
 			children = (
 				67923EB126729D8A0056FCC8 /* sdk */,
 				67923EBC26729D8A0056FCC8 /* sdk-tests */,
 				67923EB026729D8A0056FCC8 /* Products */,
+				260B9629551F77444E14309F /* Pods */,
+				18DB5248500D93552BE2249F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +165,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67923EC326729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes SDK" */;
 			buildPhases = (
+				9E8B2418C9ABA33999647F95 /* [CP] Check Pods Manifest.lock */,
 				67923EAA26729D8A0056FCC8 /* Headers */,
 				67923EAB26729D8A0056FCC8 /* Sources */,
 				67923EAC26729D8A0056FCC8 /* Frameworks */,
@@ -150,9 +184,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67923EC626729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes SDK Tests" */;
 			buildPhases = (
+				192642A479D74DA2982E6815 /* [CP] Check Pods Manifest.lock */,
 				67923EB426729D8A0056FCC8 /* Sources */,
 				67923EB526729D8A0056FCC8 /* Frameworks */,
 				67923EB626729D8A0056FCC8 /* Resources */,
+				AB8F395EC9897B2751EA79D6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +252,70 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		192642A479D74DA2982E6815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TouchTunes SDK-TouchTunes SDK Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E8B2418C9ABA33999647F95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TouchTunes SDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB8F395EC9897B2751EA79D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		67923EAB26729D8A0056FCC8 /* Sources */ = {
@@ -368,6 +468,7 @@
 		};
 		67923EC426729D8A0056FCC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81410A7B938E5E35A344684E /* Pods-TouchTunes SDK.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -397,6 +498,7 @@
 		};
 		67923EC526729D8A0056FCC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C96A171530CE5D81203B00F5 /* Pods-TouchTunes SDK.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
@@ -426,6 +528,7 @@
 		};
 		67923EC726729D8A0056FCC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D2515AB858AC22D4A02299 /* Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FQU58AQ88;
@@ -444,6 +547,7 @@
 		};
 		67923EC826729D8A0056FCC8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8B362EC31947CAE0C166C8C /* Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FQU58AQ88;
