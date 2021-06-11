@@ -6,8 +6,7 @@
 //
 
 class BusinessFactory {
-    public static func getSearchBusiness() -> SearchBusinessProtocol {
-        let network = NetworkFactory.getSearchNetwork()
-        return SearchBusiness(searchNetwork: network)
+    public static func getSearchBusiness(searchNetwork: SearchNetworkProtocol = NetworkFactory.getSearchNetwork()) -> SearchBusinessProtocol {
+        return SearchBusiness(searchNetwork: searchNetwork)
     }
 }

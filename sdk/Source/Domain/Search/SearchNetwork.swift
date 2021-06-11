@@ -37,7 +37,7 @@ extension SearchNetwork: SearchNetworkProtocol {
                 entity: String,
                 attribute: String,
                 callback: @escaping (Result<[SearchResult], ITunesError>) -> Void) {
-        provider.request(SearchAPI.search(term: term,
+        provider.request(.search(term: term,
                                           country: country,
                                           media: media,
                                           entity: entity,
@@ -51,8 +51,8 @@ extension SearchNetwork: SearchNetworkProtocol {
                 } catch {
                     callback(.failure(ITunesError.init(type: .encoding)))
                 }
-            case .failure:
-                callback(.failure(ITunesError.init(type: .generic)))
+            case .failure(let error):
+                callback(.failure(ITunesError.init(type: .generic, moyaError: error)))
                 break
             }
         }

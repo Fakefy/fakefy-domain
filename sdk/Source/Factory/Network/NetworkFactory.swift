@@ -8,8 +8,9 @@
 import Moya
 
 class NetworkFactory {
-    static func getSearchNetwork() -> SearchNetworkProtocol {
-        let provider = MoyaProvider<SearchAPI>()
+    static func getSearchNetwork(endpointClosure: @escaping ((SearchAPI) -> Endpoint) = MoyaProvider.defaultEndpointMapping,
+                                 stubClosure: @escaping ((SearchAPI) -> Moya.StubBehavior) = MoyaProvider.neverStub) -> SearchNetworkProtocol {
+        let provider = MoyaProvider<SearchAPI>(endpointClosure: endpointClosure, stubClosure: stubClosure)
         let config = ITunesConfig()
         return SearchNetwork(provider: provider, config: config)
     }

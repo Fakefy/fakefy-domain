@@ -7,14 +7,13 @@
 
 import Nimble
 import Quick
-import Moya
 
 @testable import TouchTunes_SDK
 
 class SearchBusinessSpec: QuickSpec {
     override func spec() {
         describe("search business") {
-            context("should searching") {
+            context("should search") {
                 it("successfully") {
                     self.searchSuccess()
                 }
@@ -29,10 +28,38 @@ class SearchBusinessSpec: QuickSpec {
 // MARK: - Test Implementation
 extension SearchBusinessSpec {
     func searchSuccess() {
-        fail("Not implemented!")
+        let business = BusinessFactory.getSearchBusiness(searchNetwork: MockedSearchNetwork.Success.withData())
+        
+        waitUntil(timeout: .seconds(10)) { done in
+            business.search(term: "", country: "", media: "", entity: "", attribute: "") { result in
+                switch result {
+                case .success(let searchResult):
+                    expect(searchResult).toNot(beEmpty())
+                    done()
+                    break
+                case .failure:
+                    fail("Must be a success response!")
+                    done()
+                }
+            }
+        }
     }
     
     func searchFailure() {
-        fail("Not implemented!")
+        let business = BusinessFactory.getSearchBusiness(searchNetwork: MockedSearchNetwork.Failure.withGenericError())
+        
+        waitUntil(timeout: .seconds(10)) { done in
+            business.search(term: "", country: "", media: "", entity: "", attribute: "") { result in
+                switch result {
+                case .success:
+                    fail("Must be a failure response!")
+                    done()
+                    break
+                case .failure(let error):
+                    expect(error.type) == .generic
+                    done()
+                }
+            }
+        }
     }
 }

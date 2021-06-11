@@ -21,9 +21,7 @@ class SearchNetworkSpec: QuickSpec {
                 it("failing") {
                     self.searchFailure()
                 }
-                it("mapping successfully") {
-                    self.searchMappingSuccessfully()
-                }
+                // TODO: Test object mapping
             }
         }
     }
@@ -32,19 +30,19 @@ class SearchNetworkSpec: QuickSpec {
 // MARK: - Test Implementation
 extension SearchNetworkSpec {
     
-    // TODO: Implement local request
     func searchSuccess() {
-        
-        let network = NetworkFactory.getSearchNetwork()
-        
-        waitUntil(timeout: DispatchTimeInterval.seconds(10)) { done in
+        let mockData = Mock.dataFromJson(named: "search-success")
+        let mock = Mock.mock(api: ApiReference.Search.search, status: 200, data: mockData)
+        let network = NetworkFactory.getSearchNetwork(endpointClosure: mock, stubClosure: MoyaProvider<SearchAPI>.immediatelyStub)
+
+        waitUntil(timeout: .seconds(10)) { done in
             network.search(term: "Queen", country: "US", media: "music", entity: "album", attribute: "artistTerm") { searchResult in
                 switch searchResult {
                 case .success(let searchData):
                     expect(searchData).notTo(beEmpty())
                     done()
-                case .failure:
-                    fail("Must be a success response!")
+                case .failure(let error):
+                    fail("Must be a success response! \(String(describing: error.moyaError))")
                     done()
                 }
             }
@@ -52,10 +50,21 @@ extension SearchNetworkSpec {
     }
     
     func searchFailure() {
-        fail("Not implemented!")
-    }
-    
-    func searchMappingSuccessfully() {
-        fail("Not implemented!")
+        let mock = Mock.mock(api: ApiReference.Search.search, status: 401, data: Data())
+        let network = NetworkFactory.getSearchNetwork(endpointClosure: mock, stubClosure: MoyaProvider<SearchAPI>.immediatelyStub)
+
+        waitUntil(timeout: .seconds(10)) { done in
+            network.search(term: "Queen", country: "US", media: "music", entity: "album", attribute: "artistTerm") { searchResult in
+                switch searchResult {
+                case .success(let searchData):
+                    expect(searchData).notTo(beEmpty())
+                    done()
+                case .failure(let error):
+                    expect(error.moyaError?.response?.statusCode).to(equal(401))
+                    expect(error.type).to(equal(.generic))
+                    done()
+                }
+            }
+        }
     }
 }
