@@ -26,19 +26,15 @@ extension SearchAPI: TargetType {
         }
     }
     
-    var method: Method {
+    var method: Moya.Method {
         switch self {
         case .search:
             return .get
         }
     }
     
-    // TODO: Add sample data for testing
     var sampleData: Data {
-        switch self {
-        case .search:
-            return Data()
-        }
+        return Data()
     }
     
     var task: Task {
