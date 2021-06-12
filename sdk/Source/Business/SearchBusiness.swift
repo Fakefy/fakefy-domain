@@ -5,7 +5,7 @@
 //  Created by Ney Moura on 10/06/21.
 //
 
-protocol SearchBusinessProtocol {
+public protocol SearchBusinessProtocol {
     func search(term: String, country: String, media: String, entity: String, attribute: String, callback: @escaping (Result<[SearchResult], ITunesError>) -> Void)
 }
 

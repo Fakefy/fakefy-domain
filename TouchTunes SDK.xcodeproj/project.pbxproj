@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6770DFE126756B260016F827 /* TouchTunesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770DFE026756B260016F827 /* TouchTunesFactory.swift */; };
 		67923EB926729D8A0056FCC8 /* TouchTunes_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */; };
 		67923EBE26729D8A0056FCC8 /* SearchNetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EBD26729D8A0056FCC8 /* SearchNetworkSpec.swift */; };
 		67923ED22672A61F0056FCC8 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED12672A61F0056FCC8 /* SearchAPI.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		47A8BC0A0C1EB63EE03A682F /* Pods_TouchTunes_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchTunes_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEE2C5B8522A24B496CF10C /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6770DFE026756B260016F827 /* TouchTunesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTunesFactory.swift; sourceTree = "<group>"; };
 		67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchTunes_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67923EB326729D8A0056FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67923EB826729D8A0056FCC8 /* TouchTunes SDK Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchTunes SDK Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,6 +106,14 @@
 				A8B362EC31947CAE0C166C8C /* Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		6770DFDF26756B150016F827 /* TouchTunes */ = {
+			isa = PBXGroup;
+			children = (
+				6770DFE026756B260016F827 /* TouchTunesFactory.swift */,
+			);
+			path = TouchTunes;
 			sourceTree = "<group>";
 		};
 		67923EA526729D8A0056FCC8 = {
@@ -185,6 +195,7 @@
 		67923ECD2672A5680056FCC8 /* Factory */ = {
 			isa = PBXGroup;
 			children = (
+				6770DFDF26756B150016F827 /* TouchTunes */,
 				67923EE62672C1360056FCC8 /* Business */,
 				67923EE12672B9A40056FCC8 /* Network */,
 			);
@@ -487,6 +498,7 @@
 			files = (
 				67923EDE2672B5AE0056FCC8 /* ITunesError.swift in Sources */,
 				67923EDA2672B2AF0056FCC8 /* SearchNetwork.swift in Sources */,
+				6770DFE126756B260016F827 /* TouchTunesFactory.swift in Sources */,
 				67923EE32672B9B70056FCC8 /* NetworkFactory.swift in Sources */,
 				67923EE52672BD550056FCC8 /* SearchBusiness.swift in Sources */,
 				67923EE82672C1530056FCC8 /* BusinessFactory.swift in Sources */,

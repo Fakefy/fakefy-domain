@@ -7,7 +7,7 @@
 
 import Moya
 
-struct ITunesError: Error {
+public struct ITunesError: Error {
 
     enum ErrorType: CaseIterable {
         case generic
