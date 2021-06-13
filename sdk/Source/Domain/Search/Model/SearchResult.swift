@@ -31,6 +31,8 @@ public struct SearchResult: Codable {
     public let trackCount: Int
     public let trackNumber: Int?
     public let trackTimeMillis: Int?
+    public let copyright: String?
+    public let releaseDate: String?
     public let country: String
     public let currency: String
     public let primaryGenreName: String
@@ -61,6 +63,8 @@ public struct SearchResult: Codable {
         case trackCount = "trackCount"
         case trackNumber = "trackNumber"
         case trackTimeMillis = "trackTimeMillis"
+        case copyright = "copyright"
+        case releaseDate = "releaseDate"
         case country = "country"
         case currency = "currency"
         case primaryGenreName = "primaryGenreName"
