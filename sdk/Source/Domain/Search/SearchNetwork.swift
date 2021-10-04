@@ -7,7 +7,7 @@
 
 import Moya
 
-protocol SearchNetworkProtocol {
+protocol SearchNetwork {
     func search(term: String,
                 country: String,
                 media: String,
@@ -16,7 +16,7 @@ protocol SearchNetworkProtocol {
                 callback: @escaping (Result<[SearchResult], ITunesError>) -> Void)
 }
 
-class SearchNetwork {
+class SearchNetworkImplementation {
     
     private let provider: MoyaProvider<SearchAPI>
     private let config: ITunesConfig
@@ -29,7 +29,7 @@ class SearchNetwork {
 }
 
 // MARK: - Requests
-extension SearchNetwork: SearchNetworkProtocol {
+extension SearchNetworkImplementation: SearchNetwork {
     
     func search(term: String,
                 country: String,

@@ -6,7 +6,7 @@
 //
 
 public class TouchTunesFactory {
-    public static func getSearchBusiness() -> SearchBusinessProtocol {
+    public static func getSearchBusiness() -> SearchBusiness {
         return BusinessFactory.getSearchBusiness()
     }
 }

@@ -11,8 +11,8 @@ import Foundation
 
 enum MockedSearchNetwork {
     enum Success {
-        static func withData() -> SearchNetworkProtocol {
-            class SearchSuccessNetwork: SearchNetworkProtocol {
+        static func withData() -> SearchNetwork {
+            class SearchSuccessNetwork: SearchNetwork {
                 func search(term: String, country: String, media: String, entity: String, attribute: String, callback: @escaping (Result<[SearchResult], ITunesError>) -> Void) {
                     let mockData = Mock.dataFromJson(named: "search-success")
                     let results = try! JSONDecoder().decode(BaseResponse<SearchResult>.self, from: mockData)
@@ -25,8 +25,8 @@ enum MockedSearchNetwork {
     }
     
     enum Failure {
-        static func withGenericError() -> SearchNetworkProtocol {
-            class SearchFailureNetwork: SearchNetworkProtocol {
+        static func withGenericError() -> SearchNetwork {
+            class SearchFailureNetwork: SearchNetwork {
                 func search(term: String, country: String, media: String, entity: String, attribute: String, callback: @escaping (Result<[SearchResult], ITunesError>) -> Void) {
                     let result = Result<[SearchResult], ITunesError>.failure(ITunesError.init(type: .generic))
                     callback(result)
