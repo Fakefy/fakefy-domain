@@ -21,7 +21,6 @@ class SearchNetworkSpec: QuickSpec {
                 it("failing") {
                     self.searchFailure()
                 }
-                // TODO: Test object mapping
             }
         }
     }
@@ -31,40 +30,47 @@ class SearchNetworkSpec: QuickSpec {
 extension SearchNetworkSpec {
     
     func searchSuccess() {
+        
+        // Given
         let mockData = Mock.dataFromJson(named: "search-success")
         let mock = Mock.mock(api: ApiReference.Search.search, status: 200, data: mockData)
         let network = NetworkFactory.getSearchNetwork(endpointClosure: mock, stubClosure: MoyaProvider<SearchAPI>.immediatelyStub)
-
-        waitUntil(timeout: .seconds(10)) { done in
-            network.search(term: "Queen", country: "US", media: "music", entity: "album", attribute: "artistTerm") { searchResult in
-                switch searchResult {
-                case .success(let searchData):
-                    expect(searchData).notTo(beEmpty())
-                    done()
-                case .failure(let error):
-                    fail("Must be a success response! \(String(describing: error.moyaError))")
-                    done()
-                }
-            }
+        let expectation = expectation(description: "network-expectation")
+        var result: Result<[SearchResult], ITunesError>?
+        
+        // When
+        network.search(term: "Queen", country: "US", media: "music", entity: "album", attribute: "artistTerm") {
+            result = $0
+            expectation.fulfill()
         }
+        
+        // Then
+        waitForExpectations(timeout: 5)
+        
+        expect(result).to(beSuccess { searchResults in
+            expect(searchResults.count).to(equal(1))
+        })
     }
     
     func searchFailure() {
+        
+        // Given
         let mock = Mock.mock(api: ApiReference.Search.search, status: 401, data: Data())
         let network = NetworkFactory.getSearchNetwork(endpointClosure: mock, stubClosure: MoyaProvider<SearchAPI>.immediatelyStub)
+        let expectation = expectation(description: "network-expectation")
+        var result: Result<[SearchResult], ITunesError>?
 
-        waitUntil(timeout: .seconds(10)) { done in
-            network.search(term: "Queen", country: "US", media: "music", entity: "album", attribute: "artistTerm") { searchResult in
-                switch searchResult {
-                case .success(let searchData):
-                    expect(searchData).notTo(beEmpty())
-                    done()
-                case .failure(let error):
-                    expect(error.moyaError?.response?.statusCode).to(equal(401))
-                    expect(error.type).to(equal(.generic))
-                    done()
-                }
-            }
+        // When
+        network.search(term: "Queen", country: "US", media: "music", entity: "album", attribute: "artistTerm") {
+            result = $0
+            expectation.fulfill()
         }
+        
+        // Then
+        waitForExpectations(timeout: 5)
+        
+        expect(result).to(beFailure { error in
+            expect(error.type).to(equal(.generic))
+        })
     }
 }

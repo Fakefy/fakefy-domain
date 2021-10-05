@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6770DFE126756B260016F827 /* TouchTunesFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6770DFE026756B260016F827 /* TouchTunesFactory.swift */; };
+		6781F71B270BCAAA00DAF479 /* Nimble+BeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781F719270BCAA400DAF479 /* Nimble+BeResult.swift */; };
 		67923EB926729D8A0056FCC8 /* TouchTunes_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */; };
 		67923EBE26729D8A0056FCC8 /* SearchNetworkSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EBD26729D8A0056FCC8 /* SearchNetworkSpec.swift */; };
 		67923ED22672A61F0056FCC8 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED12672A61F0056FCC8 /* SearchAPI.swift */; };
@@ -42,6 +43,7 @@
 		47A8BC0A0C1EB63EE03A682F /* Pods_TouchTunes_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchTunes_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5FEE2C5B8522A24B496CF10C /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6770DFE026756B260016F827 /* TouchTunesFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchTunesFactory.swift; sourceTree = "<group>"; };
+		6781F719270BCAA400DAF479 /* Nimble+BeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nimble+BeResult.swift"; sourceTree = "<group>"; };
 		67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchTunes_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67923EB326729D8A0056FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67923EB826729D8A0056FCC8 /* TouchTunes SDK Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchTunes SDK Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +118,14 @@
 			path = TouchTunes;
 			sourceTree = "<group>";
 		};
+		6781F718270BCA9300DAF479 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6781F719270BCAA400DAF479 /* Nimble+BeResult.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		67923EA526729D8A0056FCC8 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +194,7 @@
 		67923ECC26729EAA0056FCC8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				6781F718270BCA9300DAF479 /* Extension */,
 				67923EF52673FE110056FCC8 /* Responses */,
 				67923EEA2672D3CF0056FCC8 /* Business */,
 				67923EE92672D3C80056FCC8 /* Network */,
@@ -517,6 +528,7 @@
 				67923EFB267413D90056FCC8 /* MockedSearchNetwork.swift in Sources */,
 				67923EF42673FAEE0056FCC8 /* ApiReference.swift in Sources */,
 				67923EBE26729D8A0056FCC8 /* SearchNetworkSpec.swift in Sources */,
+				6781F71B270BCAAA00DAF479 /* Nimble+BeResult.swift in Sources */,
 				67923EF22673F7DD0056FCC8 /* Mock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
