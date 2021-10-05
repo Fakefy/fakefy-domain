@@ -126,6 +126,16 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		6781F71C270BD35E00DAF479 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				67923EF52673FE110056FCC8 /* Responses */,
+				67923EEA2672D3CF0056FCC8 /* Business */,
+				67923EE92672D3C80056FCC8 /* Network */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		67923EA526729D8A0056FCC8 = {
 			isa = PBXGroup;
 			children = (
@@ -194,10 +204,8 @@
 		67923ECC26729EAA0056FCC8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				6781F71C270BD35E00DAF479 /* Search */,
 				6781F718270BCA9300DAF479 /* Extension */,
-				67923EF52673FE110056FCC8 /* Responses */,
-				67923EEA2672D3CF0056FCC8 /* Business */,
-				67923EE92672D3C80056FCC8 /* Network */,
 				67923EF02673F7A70056FCC8 /* Mock */,
 			);
 			path = Source;
