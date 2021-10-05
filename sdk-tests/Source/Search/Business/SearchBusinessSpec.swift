@@ -27,12 +27,20 @@ class SearchBusinessSpec: QuickSpec {
 
 // MARK: - Test Implementation
 extension SearchBusinessSpec {
+    
     func searchSuccess() {
         
         // Given
-        let business = BusinessFactory.getSearchBusiness(searchNetwork: MockedSearchNetwork.Success.withData())
+        let network = SearchNetworkMockImpl()
+        let business = BusinessFactory.getSearchBusiness(searchNetwork: network)
         let expectation = expectation(description: "business-expectation")
         var result: Result<[SearchResult], ITunesError>?
+        
+        network.searchClosure = { _, _, _, _, _, callback in
+            let data = Mock.dataFromJson(named: "search-success")
+            let searchResult = try! JSONDecoder().decode(BaseResponse<SearchResult>.self, from: data)
+            callback(Result.success(searchResult.results))
+        }
         
         // When
         business.search(term: "", country: "", media: "", entity: "", attribute: "") {
@@ -51,9 +59,16 @@ extension SearchBusinessSpec {
     func searchFailure() {
         
         // Given
-        let business = BusinessFactory.getSearchBusiness(searchNetwork: MockedSearchNetwork.Failure.withGenericError())
+        let network = SearchNetworkMockImpl()
+        let business = BusinessFactory.getSearchBusiness(searchNetwork: network)
         let expectation = expectation(description: "business-expectation")
         var result: Result<[SearchResult], ITunesError>?
+        
+        network.searchClosure = { _, _, _, _, _, callback in
+            let error = ITunesError(type: .generic)
+            let errorResult = Result<[SearchResult], ITunesError>.failure(error)
+            callback(errorResult)
+        }
         
         // When
         business.search(term: "", country: "", media: "", entity: "", attribute: "") {
