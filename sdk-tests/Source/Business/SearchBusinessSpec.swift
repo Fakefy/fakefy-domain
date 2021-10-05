@@ -28,38 +28,42 @@ class SearchBusinessSpec: QuickSpec {
 // MARK: - Test Implementation
 extension SearchBusinessSpec {
     func searchSuccess() {
-        let business = BusinessFactory.getSearchBusiness(searchNetwork: MockedSearchNetwork.Success.withData())
         
-        waitUntil(timeout: .seconds(10)) { done in
-            business.search(term: "", country: "", media: "", entity: "", attribute: "") { result in
-                switch result {
-                case .success(let searchResult):
-                    expect(searchResult).toNot(beEmpty())
-                    done()
-                    break
-                case .failure:
-                    fail("Must be a success response!")
-                    done()
-                }
-            }
+        // Given
+        let business = BusinessFactory.getSearchBusiness(searchNetwork: MockedSearchNetwork.Success.withData())
+        let expectation = expectation(description: "business-expectation")
+        var result: Result<[SearchResult], ITunesError>?
+        
+        // When
+        business.search(term: "", country: "", media: "", entity: "", attribute: "") {
+            result = $0
+            expectation.fulfill()
         }
+        
+        // Then
+        waitForExpectations(timeout: 5)
+        
+        expect(result).to(beSuccess { searchResult in
+            expect(searchResult).notTo(beEmpty())
+        })
     }
     
     func searchFailure() {
-        let business = BusinessFactory.getSearchBusiness(searchNetwork: MockedSearchNetwork.Failure.withGenericError())
         
-        waitUntil(timeout: .seconds(10)) { done in
-            business.search(term: "", country: "", media: "", entity: "", attribute: "") { result in
-                switch result {
-                case .success:
-                    fail("Must be a failure response!")
-                    done()
-                    break
-                case .failure(let error):
-                    expect(error.type) == .generic
-                    done()
-                }
-            }
+        // Given
+        let business = BusinessFactory.getSearchBusiness(searchNetwork: MockedSearchNetwork.Failure.withGenericError())
+        let expectation = expectation(description: "business-expectation")
+        var result: Result<[SearchResult], ITunesError>?
+        
+        // When
+        business.search(term: "", country: "", media: "", entity: "", attribute: "") {
+            result = $0
+            expectation.fulfill()
         }
+        
+        // Then
+        expect(result).to(beFailure { error in
+            expect(error.type).to(equal(.generic))
+        })
     }
 }
