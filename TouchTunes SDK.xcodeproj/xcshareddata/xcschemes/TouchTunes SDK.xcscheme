@@ -29,6 +29,15 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       codeCoverageEnabled = "YES"
       onlyGenerateCoverageForSpecifiedTargets = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "67923EAE26729D8A0056FCC8"
+            BuildableName = "TouchTunes_SDK.framework"
+            BlueprintName = "TouchTunes SDK"
+            ReferencedContainer = "container:TouchTunes SDK.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
