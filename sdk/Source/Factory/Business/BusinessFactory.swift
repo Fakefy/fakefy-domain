@@ -7,6 +7,6 @@
 
 class BusinessFactory {
     public static func getSearchBusiness(searchNetwork: SearchNetwork = NetworkFactory.getSearchNetwork()) -> SearchBusiness {
-        return SearchBusinessImplementation(searchNetwork: searchNetwork)
+        return SearchBusinessImpl(searchNetwork: searchNetwork)
     }
 }

@@ -9,7 +9,7 @@ public protocol SearchBusiness {
     func search(term: String, country: String, media: String, entity: String, attribute: String, callback: @escaping (Result<[SearchResult], ITunesError>) -> Void)
 }
 
-class SearchBusinessImplementation {
+class SearchBusinessImpl {
     
     private let searchNetwork: SearchNetwork
     
@@ -19,7 +19,7 @@ class SearchBusinessImplementation {
 }
 
 // MARK: - Business
-extension SearchBusinessImplementation: SearchBusiness {
+extension SearchBusinessImpl: SearchBusiness {
     func search(term: String, country: String, media: String, entity: String, attribute: String, callback: @escaping (Result<[SearchResult], ITunesError>) -> Void) {
         searchNetwork.search(term: term, country: country, media: media, entity: entity, attribute: attribute, callback: callback)
     }

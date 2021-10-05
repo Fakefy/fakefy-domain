@@ -16,7 +16,7 @@ protocol SearchNetwork {
                 callback: @escaping (Result<[SearchResult], ITunesError>) -> Void)
 }
 
-class SearchNetworkImplementation {
+class SearchNetworkImpl {
     
     private let provider: MoyaProvider<SearchAPI>
     private let config: ITunesConfig
@@ -29,7 +29,7 @@ class SearchNetworkImplementation {
 }
 
 // MARK: - Requests
-extension SearchNetworkImplementation: SearchNetwork {
+extension SearchNetworkImpl: SearchNetwork {
     
     func search(term: String,
                 country: String,

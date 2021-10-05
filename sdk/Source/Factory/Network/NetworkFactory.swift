@@ -12,6 +12,6 @@ class NetworkFactory {
                                  stubClosure: @escaping ((SearchAPI) -> Moya.StubBehavior) = MoyaProvider.neverStub) -> SearchNetwork {
         let provider = MoyaProvider<SearchAPI>(endpointClosure: endpointClosure, stubClosure: stubClosure)
         let config = ITunesConfig()
-        return SearchNetworkImplementation(provider: provider, config: config)
+        return SearchNetworkImpl(provider: provider, config: config)
     }
 }
