@@ -9,17 +9,22 @@ import CoreData
 
 class TestCoreDataStack {
     
-    private let dataModelName: String = "TouchTunes SDK"
-    private let configurationName: String = "Default"
+    private let dataModelName: String = "DataModel"
         
     let container: NSPersistentContainer
 
     init() {
-        container = NSPersistentContainer(name: dataModelName)
+        
+        guard
+            let dataModel = Bundle(for: type(of: self)).url(forResource: dataModelName, withExtension: "momd"),
+            let objectModel = NSManagedObjectModel(contentsOf: dataModel) else {
+            fatalError("Error initializing TestCoreDataStack")
+        }
 
+        self.container = NSPersistentContainer(name: dataModelName, managedObjectModel: objectModel)
+        
         let inMemoryStore = NSPersistentStoreDescription()
         inMemoryStore.url = URL(fileURLWithPath: "/dev/null")
-        
         container.persistentStoreDescriptions = [inMemoryStore]
         
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in

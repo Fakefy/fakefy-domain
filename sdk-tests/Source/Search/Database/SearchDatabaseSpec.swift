@@ -11,24 +11,22 @@ import Nimble
 import Quick
 import CoreData
 
-import UIKit
-
 class SearchDatabaseSpec: QuickSpec {
     override func spec() {
-        describe("search databse") {
-            context("should save") {
-                fit("successfully") {
-                    self.saveSuccess()
+        describe("search database") {
+            context("when saving") {
+                fit("a correct object") {
+                    self.savingCorrectObject()
                 }
-                it("failing") {
+                it("a wrong object") {
                     self.saveFailure()
                 }
             }
-            context("should load") {
-                it("successfully") {
+            context("loading") {
+                it("a existing object") {
                     self.loadSuccess()
                 }
-                it("failing") {
+                it("failure") {
                     self.loadFailure()
                 }
             }
@@ -40,25 +38,24 @@ class SearchDatabaseSpec: QuickSpec {
 extension SearchDatabaseSpec {
     
     // MARK: - Save
-    func saveSuccess() {
+    func savingCorrectObject() {
         // GIVEN
         let container = TestCoreDataStack.init().container
-        let context = container.viewContext
-        
+        let context = container.newBackgroundContext()
+        let fetchRequest = SearchResultMO.fetchRequest()
         let newItem = SearchResultMO(context: context)
-        newItem.name = "First item"
-        
+        newItem.name = "batatinhaFrita"
+                
         // WHEN
         try! context.save()
         
         // THEN
-        
-//        let result = try! context.execute(request)// as? [SearchResultMO]
-        
-//        expect(result).notTo(beNil())
-//        expect(result).notTo(beEmpty())
-//        expect(result?.count).to(equal(1))
-//        expect(result?.first?.name).to(equal("batatinhaFrita"))
+        let result: [SearchResultMO] = try! context.fetch(fetchRequest)
+
+        expect(result).notTo(beNil())
+        expect(result).notTo(beEmpty())
+        expect(result.count).to(equal(1))
+        expect(result.first?.name).to(equal("batatinhaFrita"))
     }
     
     func saveFailure() {
