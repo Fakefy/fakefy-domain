@@ -5,8 +5,6 @@
 //  Created by Ney Moura on 10/06/21.
 //
 
-import Moya
-
 public struct ITunesError: Error {
 
     enum ErrorType: CaseIterable {
@@ -15,10 +13,8 @@ public struct ITunesError: Error {
     }
     
     let type: ErrorType
-    let moyaError: MoyaError?
         
-    init(type: ErrorType = .generic, moyaError: MoyaError? = nil) {
+    init(type: ErrorType = .generic) {
         self.type = type
-        self.moyaError = moyaError
     }
 }

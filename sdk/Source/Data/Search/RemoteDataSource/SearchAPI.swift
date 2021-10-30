@@ -8,13 +8,13 @@
 import Moya
 
 enum SearchAPI {
-    case search(term: String, country: String, media: String, entity: String, attribute: String, config: ITunesConfig)
+    case search(request: SearchRequest, config: ITunesConfig)
 }
 
 extension SearchAPI: TargetType {
     var baseURL: URL {
         switch self {
-        case .search(_, _, _, _, _, let config):
+        case .search(_, let config):
             return try! config.baseURL.asURL()
         }
     }
@@ -39,13 +39,13 @@ extension SearchAPI: TargetType {
     
     var task: Task {
         switch self {
-        case .search(let term, let country, let media, let entity, let attribute, _):
+        case .search(let request, _):
             var parameters: [String: Any] = [:]
-            parameters["term"] = term
-            parameters["country"] = country
-            parameters["media"] = media
-            parameters["entity"] = entity
-            parameters["attribute"] = attribute
+            parameters["term"] = request.term
+            parameters["country"] = request.country
+            parameters["media"] = request.media
+            parameters["entity"] = request.entity
+            parameters["attribute"] = request.attribute
             return .requestParameters(parameters: parameters, encoding: URLEncoding.queryString)
         }
     }

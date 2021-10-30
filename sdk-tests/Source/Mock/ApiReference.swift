@@ -10,6 +10,6 @@
 enum ApiReference {
     enum Search {
         static let config = ITunesConfig()
-        static let search = SearchAPI.search(term: "", country: "", media: "", entity: "", attribute: "", config: config)
+        static let search = SearchAPI.search(request: SearchRequest(term: "", country: "", media: "", entity: "", attribute: ""), config: config)
     }
 }
