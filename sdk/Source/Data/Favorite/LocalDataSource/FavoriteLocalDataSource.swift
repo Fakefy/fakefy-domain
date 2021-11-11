@@ -49,8 +49,24 @@ extension FavoriteLocalDataSourceImpl: FavoriteLocalDataSource {
 }
 
 extension Album {
-    convenience init(from managed: AlbumMO) {
-        self.init()
-        Mirror(reflecting: managed).copyAttributes(into: self)
+    init(from managed: AlbumMO) {
+        wrapperType = managed.wrapperType ?? "Unkown"
+        artistId = Int(managed.artistId)
+        collectionId = Int(managed.collectionId)
+        artistName = managed.artistName ?? "Unkown"
+        collectionName = managed.collectionName ?? "Unkown"
+        collectionCensoredName = managed.collectionCensoredName ?? "Unkown"
+        artistViewUrl = managed.artistViewUrl ?? "Unkown"
+        collectionViewUrl = managed.collectionViewUrl ?? "Unkown"
+        artworkUrl60 = managed.artworkUrl60
+        artworkUrl100 = managed.artworkUrl100
+        collectionPrice = managed.collectionPrice
+        collectionExplicitness = managed.collectionExplicitness ?? "Unkown"
+        trackCount = Int(managed.trackCount)
+        copyright = managed.copyright
+        releaseDate = managed.releaseDate
+        country = managed.country ?? "Unkown"
+        currency = managed.currency ?? "Unkown"
+        primaryGenreName = managed.primaryGenreName ?? "Unkown"
     }
 }

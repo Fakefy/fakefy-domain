@@ -53,6 +53,7 @@ extension FavoriteLocalDataSourceSpec {
             try context.save()
             hadError = false
         } catch {
+            
             hadError = true
         }
         

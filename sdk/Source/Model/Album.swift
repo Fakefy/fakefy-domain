@@ -5,25 +5,25 @@
 //  Created by Ney Moura on 10/06/21.
 //
 
-public class Album: Codable {
-    public let wrapperType: String? = nil
-    public let artistId: Int? = nil
-    public let collectionId: Int? = nil
-    public let artistName: String? = nil
-    public let collectionName: String? = nil
-    public let collectionCensoredName: String? = nil
-    public let artistViewUrl: String? = nil
-    public let collectionViewUrl: String? = nil
-    public let artworkUrl60: String? = nil
-    public let artworkUrl100: String? = nil
-    public let collectionPrice: Double? = nil
-    public let collectionExplicitness: String? = nil
-    public let trackCount: Int? = nil
-    public let copyright: String? = nil
-    public let releaseDate: String? = nil
-    public let country: String? = nil
-    public let currency: String? = nil
-    public let primaryGenreName: String? = nil
+public struct Album: Codable {
+    public let wrapperType: String
+    public let artistId: Int
+    public let collectionId: Int
+    public let artistName: String
+    public let collectionName: String
+    public let collectionCensoredName: String
+    public let artistViewUrl: String
+    public let collectionViewUrl: String
+    public let artworkUrl60: String?
+    public let artworkUrl100: String?
+    public let collectionPrice: Double
+    public let collectionExplicitness: String
+    public let trackCount: Int
+    public let copyright: String?
+    public let releaseDate: String?
+    public let country: String
+    public let currency: String
+    public let primaryGenreName: String
 
     enum CodingKeys: String, CodingKey {
         case wrapperType = "wrapperType"
