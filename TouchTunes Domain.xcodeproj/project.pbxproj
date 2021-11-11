@@ -24,7 +24,7 @@
 		674C451B272D85E000B520CD /* RepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C451A272D85E000B520CD /* RepositoryFactory.swift */; };
 		6781F71B270BCAAA00DAF479 /* Nimble+BeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781F719270BCAA400DAF479 /* Nimble+BeResult.swift */; };
 		6782094B2732B713006E2982 /* FavoriteRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6782094A2732B713006E2982 /* FavoriteRepositorySpec.swift */; };
-		67923EB926729D8A0056FCC8 /* TouchTunes_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */; };
+		67923EB926729D8A0056FCC8 /* TouchTunes_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67923EAF26729D8A0056FCC8 /* TouchTunes_Domain.framework */; };
 		67923EBE26729D8A0056FCC8 /* SearchRemoteDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EBD26729D8A0056FCC8 /* SearchRemoteDataSourceSpec.swift */; };
 		67923ED22672A61F0056FCC8 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED12672A61F0056FCC8 /* SearchAPI.swift */; };
 		67923ED42672A7040056FCC8 /* ITunesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED32672A7040056FCC8 /* ITunesConfig.swift */; };
@@ -40,8 +40,6 @@
 		67923EF72673FE2E0056FCC8 /* search-success.json in Resources */ = {isa = PBXBuildFile; fileRef = 67923EF62673FE2E0056FCC8 /* search-success.json */; };
 		67EF2CE02728376800BC4996 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67EF2CDE2728376800BC4996 /* DataModel.xcdatamodeld */; };
 		67EF2CE12728376800BC4996 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67EF2CDE2728376800BC4996 /* DataModel.xcdatamodeld */; };
-		8A43435AB6DBA368E24339C8 /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FEE2C5B8522A24B496CF10C /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework */; };
-		B37C63E17477DAA2198DCF40 /* Pods_TouchTunes_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47A8BC0A0C1EB63EE03A682F /* Pods_TouchTunes_SDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		47A8BC0A0C1EB63EE03A682F /* Pods_TouchTunes_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchTunes_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FEE2C5B8522A24B496CF10C /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		08640FD92DDF6637E167B843 /* Pods-TouchTunes Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes Domain.debug.xcconfig"; path = "Target Support Files/Pods-TouchTunes Domain/Pods-TouchTunes Domain.debug.xcconfig"; sourceTree = "<group>"; };
+		3DC99F0E32C922CF88376EF6 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes Domain-TouchTunes Domain Tests.release.xcconfig"; path = "Target Support Files/Pods-TouchTunes Domain-TouchTunes Domain Tests/Pods-TouchTunes Domain-TouchTunes Domain Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4DA6EE06F67BF5937BB15EC1 /* Pods-TouchTunes Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes Domain.release.xcconfig"; path = "Target Support Files/Pods-TouchTunes Domain/Pods-TouchTunes Domain.release.xcconfig"; sourceTree = "<group>"; };
 		671AF77B271FB70B00BC6292 /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
 		671FE862272DD94D00357032 /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
 		671FE865272DE2B700357032 /* SearchRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryMock.swift; sourceTree = "<group>"; };
@@ -66,7 +65,6 @@
 		6736D4FD273D970700564FC1 /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
 		6736D501273D9E8900564FC1 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
 		6736D503273D9EBD00564FC1 /* SearchRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemoteDataSource.swift; sourceTree = "<group>"; };
-		673E51E727282E69002A771F /* TouchTunes SDK.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TouchTunes SDK.xcdatamodel"; sourceTree = "<group>"; };
 		6745CD56271FB14100578268 /* FavoriteLocalDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLocalDataSourceSpec.swift; sourceTree = "<group>"; };
 		6748E3B62730468700E46499 /* Mirror+CopyAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mirror+CopyAttributes.swift"; sourceTree = "<group>"; };
 		6748E3BB27304F5A00E46499 /* FavoriteLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLocalDataSourceImpl.swift; sourceTree = "<group>"; };
@@ -75,9 +73,9 @@
 		674C451A272D85E000B520CD /* RepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryFactory.swift; sourceTree = "<group>"; };
 		6781F719270BCAA400DAF479 /* Nimble+BeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nimble+BeResult.swift"; sourceTree = "<group>"; };
 		6782094A2732B713006E2982 /* FavoriteRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepositorySpec.swift; sourceTree = "<group>"; };
-		67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchTunes_SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67923EAF26729D8A0056FCC8 /* TouchTunes_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchTunes_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67923EB326729D8A0056FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		67923EB826729D8A0056FCC8 /* TouchTunes SDK Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchTunes SDK Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67923EB826729D8A0056FCC8 /* TouchTunes Domain Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchTunes Domain Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67923EBD26729D8A0056FCC8 /* SearchRemoteDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemoteDataSourceSpec.swift; sourceTree = "<group>"; };
 		67923EBF26729D8A0056FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		67923ED12672A61F0056FCC8 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
@@ -93,10 +91,7 @@
 		67923EF32673FAEE0056FCC8 /* ApiReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReference.swift; sourceTree = "<group>"; };
 		67923EF62673FE2E0056FCC8 /* search-success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "search-success.json"; sourceTree = "<group>"; };
 		67EF2CDF2728376800BC4996 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
-		81410A7B938E5E35A344684E /* Pods-TouchTunes SDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK.debug.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK/Pods-TouchTunes SDK.debug.xcconfig"; sourceTree = "<group>"; };
-		96D2515AB858AC22D4A02299 /* Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A8B362EC31947CAE0C166C8C /* Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C96A171530CE5D81203B00F5 /* Pods-TouchTunes SDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes SDK.release.xcconfig"; path = "Target Support Files/Pods-TouchTunes SDK/Pods-TouchTunes SDK.release.xcconfig"; sourceTree = "<group>"; };
+		B2B3EE6A8595BD0C95965BA4 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes Domain-TouchTunes Domain Tests.debug.xcconfig"; path = "Target Support Files/Pods-TouchTunes Domain-TouchTunes Domain Tests/Pods-TouchTunes Domain-TouchTunes Domain Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +99,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B37C63E17477DAA2198DCF40 /* Pods_TouchTunes_SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,31 +106,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67923EB926729D8A0056FCC8 /* TouchTunes_SDK.framework in Frameworks */,
-				8A43435AB6DBA368E24339C8 /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework in Frameworks */,
+				67923EB926729D8A0056FCC8 /* TouchTunes_Domain.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18DB5248500D93552BE2249F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				673E51E627282E69002A771F /* TouchTunes SDK.xcdatamodeld */,
-				47A8BC0A0C1EB63EE03A682F /* Pods_TouchTunes_SDK.framework */,
-				5FEE2C5B8522A24B496CF10C /* Pods_TouchTunes_SDK_TouchTunes_SDK_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		260B9629551F77444E14309F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				81410A7B938E5E35A344684E /* Pods-TouchTunes SDK.debug.xcconfig */,
-				C96A171530CE5D81203B00F5 /* Pods-TouchTunes SDK.release.xcconfig */,
-				96D2515AB858AC22D4A02299 /* Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig */,
-				A8B362EC31947CAE0C166C8C /* Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig */,
+				08640FD92DDF6637E167B843 /* Pods-TouchTunes Domain.debug.xcconfig */,
+				4DA6EE06F67BF5937BB15EC1 /* Pods-TouchTunes Domain.release.xcconfig */,
+				B2B3EE6A8595BD0C95965BA4 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.debug.xcconfig */,
+				3DC99F0E32C922CF88376EF6 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -327,39 +310,38 @@
 		67923EA526729D8A0056FCC8 = {
 			isa = PBXGroup;
 			children = (
-				67923EB126729D8A0056FCC8 /* sdk */,
-				67923EBC26729D8A0056FCC8 /* sdk-tests */,
+				67923EB126729D8A0056FCC8 /* Domain */,
+				67923EBC26729D8A0056FCC8 /* Domain Tests */,
 				67923EB026729D8A0056FCC8 /* Products */,
 				260B9629551F77444E14309F /* Pods */,
-				18DB5248500D93552BE2249F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		67923EB026729D8A0056FCC8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */,
-				67923EB826729D8A0056FCC8 /* TouchTunes SDK Tests.xctest */,
+				67923EAF26729D8A0056FCC8 /* TouchTunes_Domain.framework */,
+				67923EB826729D8A0056FCC8 /* TouchTunes Domain Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		67923EB126729D8A0056FCC8 /* sdk */ = {
+		67923EB126729D8A0056FCC8 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
 				67923ECA26729E7F0056FCC8 /* Supporting Files */,
 				67923EC926729E750056FCC8 /* Source */,
 			);
-			path = sdk;
+			path = Domain;
 			sourceTree = "<group>";
 		};
-		67923EBC26729D8A0056FCC8 /* sdk-tests */ = {
+		67923EBC26729D8A0056FCC8 /* Domain Tests */ = {
 			isa = PBXGroup;
 			children = (
 				67923ECB26729E990056FCC8 /* Supporting Files */,
 				67923ECC26729EAA0056FCC8 /* Source */,
 			);
-			path = "sdk-tests";
+			path = "Domain Tests";
 			sourceTree = "<group>";
 		};
 		67923EC926729E750056FCC8 /* Source */ = {
@@ -469,9 +451,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		67923EAE26729D8A0056FCC8 /* TouchTunes SDK */ = {
+		67923EAE26729D8A0056FCC8 /* TouchTunes Domain */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67923EC326729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes SDK" */;
+			buildConfigurationList = 67923EC326729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes Domain" */;
 			buildPhases = (
 				9E8B2418C9ABA33999647F95 /* [CP] Check Pods Manifest.lock */,
 				67923EAA26729D8A0056FCC8 /* Headers */,
@@ -483,14 +465,14 @@
 			);
 			dependencies = (
 			);
-			name = "TouchTunes SDK";
+			name = "TouchTunes Domain";
 			productName = "touchtunes-sdk";
-			productReference = 67923EAF26729D8A0056FCC8 /* TouchTunes_SDK.framework */;
+			productReference = 67923EAF26729D8A0056FCC8 /* TouchTunes_Domain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		67923EB726729D8A0056FCC8 /* TouchTunes SDK Tests */ = {
+		67923EB726729D8A0056FCC8 /* TouchTunes Domain Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 67923EC626729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes SDK Tests" */;
+			buildConfigurationList = 67923EC626729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes Domain Tests" */;
 			buildPhases = (
 				192642A479D74DA2982E6815 /* [CP] Check Pods Manifest.lock */,
 				67923EB426729D8A0056FCC8 /* Sources */,
@@ -503,9 +485,9 @@
 			dependencies = (
 				67923EBB26729D8A0056FCC8 /* PBXTargetDependency */,
 			);
-			name = "TouchTunes SDK Tests";
+			name = "TouchTunes Domain Tests";
 			productName = "touchtunes-sdkTests";
-			productReference = 67923EB826729D8A0056FCC8 /* TouchTunes SDK Tests.xctest */;
+			productReference = 67923EB826729D8A0056FCC8 /* TouchTunes Domain Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -526,7 +508,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 67923EA926729D8A0056FCC8 /* Build configuration list for PBXProject "TouchTunes SDK" */;
+			buildConfigurationList = 67923EA926729D8A0056FCC8 /* Build configuration list for PBXProject "TouchTunes Domain" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -539,8 +521,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				67923EAE26729D8A0056FCC8 /* TouchTunes SDK */,
-				67923EB726729D8A0056FCC8 /* TouchTunes SDK Tests */,
+				67923EAE26729D8A0056FCC8 /* TouchTunes Domain */,
+				67923EB726729D8A0056FCC8 /* TouchTunes Domain Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -579,7 +561,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TouchTunes SDK-TouchTunes SDK Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TouchTunes Domain-TouchTunes Domain Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -601,7 +583,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TouchTunes SDK-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TouchTunes Domain-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -614,15 +596,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TouchTunes Domain-TouchTunes Domain Tests/Pods-TouchTunes Domain-TouchTunes Domain Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TouchTunes Domain-TouchTunes Domain Tests/Pods-TouchTunes Domain-TouchTunes Domain Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TouchTunes SDK-TouchTunes SDK Tests/Pods-TouchTunes SDK-TouchTunes SDK Tests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TouchTunes Domain-TouchTunes Domain Tests/Pods-TouchTunes Domain-TouchTunes Domain Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -678,7 +660,7 @@
 /* Begin PBXTargetDependency section */
 		67923EBB26729D8A0056FCC8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 67923EAE26729D8A0056FCC8 /* TouchTunes SDK */;
+			target = 67923EAE26729D8A0056FCC8 /* TouchTunes Domain */;
 			targetProxy = 67923EBA26729D8A0056FCC8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -808,7 +790,7 @@
 		};
 		67923EC426729D8A0056FCC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 81410A7B938E5E35A344684E /* Pods-TouchTunes SDK.debug.xcconfig */;
+			baseConfigurationReference = 08640FD92DDF6637E167B843 /* Pods-TouchTunes Domain.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -820,14 +802,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "sdk/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Domain/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.neymoura.touchtunes.sdk;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neymoura.touchtunes.domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -840,7 +822,7 @@
 		};
 		67923EC526729D8A0056FCC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C96A171530CE5D81203B00F5 /* Pods-TouchTunes SDK.release.xcconfig */;
+			baseConfigurationReference = 4DA6EE06F67BF5937BB15EC1 /* Pods-TouchTunes Domain.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
@@ -852,14 +834,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "sdk/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Domain/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.neymoura.touchtunes.sdk;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neymoura.touchtunes.domain;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
@@ -871,12 +853,12 @@
 		};
 		67923EC726729D8A0056FCC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96D2515AB858AC22D4A02299 /* Pods-TouchTunes SDK-TouchTunes SDK Tests.debug.xcconfig */;
+			baseConfigurationReference = B2B3EE6A8595BD0C95965BA4 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3FQU58AQ88;
-				INFOPLIST_FILE = "sdk-tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Domain Tests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -893,12 +875,12 @@
 		};
 		67923EC826729D8A0056FCC8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8B362EC31947CAE0C166C8C /* Pods-TouchTunes SDK-TouchTunes SDK Tests.release.xcconfig */;
+			baseConfigurationReference = 3DC99F0E32C922CF88376EF6 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3FQU58AQ88;
-				INFOPLIST_FILE = "sdk-tests/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "Domain Tests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -916,7 +898,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		67923EA926729D8A0056FCC8 /* Build configuration list for PBXProject "TouchTunes SDK" */ = {
+		67923EA926729D8A0056FCC8 /* Build configuration list for PBXProject "TouchTunes Domain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67923EC126729D8A0056FCC8 /* Debug */,
@@ -925,7 +907,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67923EC326729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes SDK" */ = {
+		67923EC326729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes Domain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67923EC426729D8A0056FCC8 /* Debug */,
@@ -934,7 +916,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		67923EC626729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes SDK Tests" */ = {
+		67923EC626729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes Domain Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				67923EC726729D8A0056FCC8 /* Debug */,
@@ -946,17 +928,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		673E51E627282E69002A771F /* TouchTunes SDK.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				673E51E727282E69002A771F /* TouchTunes SDK.xcdatamodel */,
-			);
-			currentVersion = 673E51E727282E69002A771F /* TouchTunes SDK.xcdatamodel */;
-			name = "TouchTunes SDK.xcdatamodeld";
-			path = "sdk/Supporting Files/TouchTunes SDK.xcdatamodeld";
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
 		67EF2CDE2728376800BC4996 /* DataModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (

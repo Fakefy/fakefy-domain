@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "67923EAE26729D8A0056FCC8"
-               BuildableName = "TouchTunes_SDK.framework"
-               BlueprintName = "TouchTunes SDK"
-               ReferencedContainer = "container:TouchTunes SDK.xcodeproj">
+               BuildableName = "TouchTunes_Domain.framework"
+               BlueprintName = "TouchTunes Domain"
+               ReferencedContainer = "container:TouchTunes Domain.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67923EAE26729D8A0056FCC8"
-            BuildableName = "TouchTunes_SDK.framework"
-            BlueprintName = "TouchTunes SDK"
-            ReferencedContainer = "container:TouchTunes SDK.xcodeproj">
+            BuildableName = "TouchTunes_Domain.framework"
+            BlueprintName = "TouchTunes Domain"
+            ReferencedContainer = "container:TouchTunes Domain.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
@@ -44,9 +44,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "67923EB726729D8A0056FCC8"
-               BuildableName = "TouchTunes SDK Tests.xctest"
-               BlueprintName = "TouchTunes SDK Tests"
-               ReferencedContainer = "container:TouchTunes SDK.xcodeproj">
+               BuildableName = "TouchTunes Domain Tests.xctest"
+               BlueprintName = "TouchTunes Domain Tests"
+               ReferencedContainer = "container:TouchTunes Domain.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "67923EAE26729D8A0056FCC8"
-            BuildableName = "TouchTunes_SDK.framework"
-            BlueprintName = "TouchTunes SDK"
-            ReferencedContainer = "container:TouchTunes SDK.xcodeproj">
+            BuildableName = "TouchTunes_Domain.framework"
+            BlueprintName = "TouchTunes Domain"
+            ReferencedContainer = "container:TouchTunes Domain.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

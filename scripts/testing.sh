@@ -3,8 +3,8 @@
 # Exit on error
 set -e
 
-SCHEME='TouchTunes SDK'
-WORKSPACE='TouchTunes SDK.xcworkspace'
+SCHEME='TouchTunes Domain'
+WORKSPACE='TouchTunes Domain.xcworkspace'
 
 DESTINATION='platform=iOS Simulator,name=iPhone 12,OS=14.5'
 

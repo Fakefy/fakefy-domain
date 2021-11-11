@@ -8,7 +8,7 @@
 import Nimble
 import Quick
 
-@testable import TouchTunes_SDK
+@testable import TouchTunes_Domain
 
 class SearchUseCaseSpec: QuickSpec {
     override func spec() {
