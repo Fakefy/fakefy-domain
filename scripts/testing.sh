@@ -1,12 +1,12 @@
 #!/bin/zsh
 
 # Exit on error
-set -e
+set -eo pipefail
 
-SCHEME='TouchTunes SDK'
-WORKSPACE='TouchTunes SDK.xcworkspace'
+SCHEME='TouchTunes Domain'
+WORKSPACE='TouchTunes Domain.xcworkspace'
 
-DESTINATION='platform=iOS Simulator,name=iPhone 12,OS=14.5'
+DESTINATION='platform=iOS Simulator,name=iPhone 13,OS=15.0'
 
 # 1 - Check for xcpretty
 echo "Checking for xcpretty installation..."

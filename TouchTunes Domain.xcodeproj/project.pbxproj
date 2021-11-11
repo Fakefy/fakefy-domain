@@ -1,0 +1,960 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		169BCA057BA279E9275F8768 /* Pods_TouchTunes_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4463822BC4D2C30155C77C55 /* Pods_TouchTunes_Domain.framework */; };
+		671AF779271FB61400BC6292 /* FavoriteLocalDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745CD56271FB14100578268 /* FavoriteLocalDataSourceSpec.swift */; };
+		671AF77C271FB70B00BC6292 /* TestCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671AF77B271FB70B00BC6292 /* TestCoreDataStack.swift */; };
+		671FE863272DD94D00357032 /* SearchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671FE862272DD94D00357032 /* SearchRequest.swift */; };
+		671FE866272DE2B700357032 /* SearchRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671FE865272DE2B700357032 /* SearchRepositoryMock.swift */; };
+		671FE868272DEE4000357032 /* JSONDecoder+AtKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 671FE867272DEE4000357032 /* JSONDecoder+AtKeyPath.swift */; };
+		6736D4FA273D95C500564FC1 /* SearchAlbumUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736D4F9273D95C500564FC1 /* SearchAlbumUseCase.swift */; };
+		6736D4FC273D96CF00564FC1 /* FavoriteLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736D4FB273D96CF00564FC1 /* FavoriteLocalDataSource.swift */; };
+		6736D4FE273D970700564FC1 /* FavoriteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736D4FD273D970700564FC1 /* FavoriteRepository.swift */; };
+		6736D502273D9E8900564FC1 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736D501273D9E8900564FC1 /* SearchRepository.swift */; };
+		6736D504273D9EBD00564FC1 /* SearchRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6736D503273D9EBD00564FC1 /* SearchRemoteDataSource.swift */; };
+		6748E3B72730468700E46499 /* Mirror+CopyAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748E3B62730468700E46499 /* Mirror+CopyAttributes.swift */; };
+		6748E3BC27304F5A00E46499 /* FavoriteLocalDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748E3BB27304F5A00E46499 /* FavoriteLocalDataSourceImpl.swift */; };
+		6748E3BE27304F6C00E46499 /* FavoriteRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6748E3BD27304F6C00E46499 /* FavoriteRepositoryImpl.swift */; };
+		674C4517272D82C500B520CD /* SearchRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C4516272D82C500B520CD /* SearchRepositoryImpl.swift */; };
+		674C451B272D85E000B520CD /* RepositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674C451A272D85E000B520CD /* RepositoryFactory.swift */; };
+		6781F71B270BCAAA00DAF479 /* Nimble+BeResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6781F719270BCAA400DAF479 /* Nimble+BeResult.swift */; };
+		6782094B2732B713006E2982 /* FavoriteRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6782094A2732B713006E2982 /* FavoriteRepositorySpec.swift */; };
+		67923EB926729D8A0056FCC8 /* TouchTunes_Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67923EAF26729D8A0056FCC8 /* TouchTunes_Domain.framework */; };
+		67923EBE26729D8A0056FCC8 /* SearchRemoteDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EBD26729D8A0056FCC8 /* SearchRemoteDataSourceSpec.swift */; };
+		67923ED22672A61F0056FCC8 /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED12672A61F0056FCC8 /* SearchAPI.swift */; };
+		67923ED42672A7040056FCC8 /* ITunesConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED32672A7040056FCC8 /* ITunesConfig.swift */; };
+		67923ED82672A8B50056FCC8 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED72672A8B50056FCC8 /* Album.swift */; };
+		67923EDA2672B2AF0056FCC8 /* SearchRemoteDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923ED92672B2AF0056FCC8 /* SearchRemoteDataSourceImpl.swift */; };
+		67923EDE2672B5AE0056FCC8 /* ITunesError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EDD2672B5AE0056FCC8 /* ITunesError.swift */; };
+		67923EE32672B9B70056FCC8 /* DataSourceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EE22672B9B70056FCC8 /* DataSourceFactory.swift */; };
+		67923EE52672BD550056FCC8 /* SearchAlbumUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EE42672BD550056FCC8 /* SearchAlbumUseCaseImpl.swift */; };
+		67923EE82672C1530056FCC8 /* UseCaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EE72672C1530056FCC8 /* UseCaseFactory.swift */; };
+		67923EED2672D4E10056FCC8 /* SearchUseCaseSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EEB2672D3E20056FCC8 /* SearchUseCaseSpec.swift */; };
+		67923EF22673F7DD0056FCC8 /* Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EF12673F7DD0056FCC8 /* Mock.swift */; };
+		67923EF42673FAEE0056FCC8 /* ApiReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67923EF32673FAEE0056FCC8 /* ApiReference.swift */; };
+		67923EF72673FE2E0056FCC8 /* search-success.json in Resources */ = {isa = PBXBuildFile; fileRef = 67923EF62673FE2E0056FCC8 /* search-success.json */; };
+		67EF2CE02728376800BC4996 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67EF2CDE2728376800BC4996 /* DataModel.xcdatamodeld */; };
+		67EF2CE12728376800BC4996 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 67EF2CDE2728376800BC4996 /* DataModel.xcdatamodeld */; };
+		C6AE74A5BE5333076C33FEE4 /* Pods_TouchTunes_Domain_TouchTunes_Domain_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04BA75B495458AFBD35B9EB /* Pods_TouchTunes_Domain_TouchTunes_Domain_Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		67923EBA26729D8A0056FCC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67923EA626729D8A0056FCC8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67923EAE26729D8A0056FCC8;
+			remoteInfo = "touchtunes-sdk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08640FD92DDF6637E167B843 /* Pods-TouchTunes Domain.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes Domain.debug.xcconfig"; path = "Target Support Files/Pods-TouchTunes Domain/Pods-TouchTunes Domain.debug.xcconfig"; sourceTree = "<group>"; };
+		3DC99F0E32C922CF88376EF6 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes Domain-TouchTunes Domain Tests.release.xcconfig"; path = "Target Support Files/Pods-TouchTunes Domain-TouchTunes Domain Tests/Pods-TouchTunes Domain-TouchTunes Domain Tests.release.xcconfig"; sourceTree = "<group>"; };
+		4463822BC4D2C30155C77C55 /* Pods_TouchTunes_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchTunes_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA6EE06F67BF5937BB15EC1 /* Pods-TouchTunes Domain.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes Domain.release.xcconfig"; path = "Target Support Files/Pods-TouchTunes Domain/Pods-TouchTunes Domain.release.xcconfig"; sourceTree = "<group>"; };
+		671AF77B271FB70B00BC6292 /* TestCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCoreDataStack.swift; sourceTree = "<group>"; };
+		671FE862272DD94D00357032 /* SearchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRequest.swift; sourceTree = "<group>"; };
+		671FE865272DE2B700357032 /* SearchRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryMock.swift; sourceTree = "<group>"; };
+		671FE867272DEE4000357032 /* JSONDecoder+AtKeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+AtKeyPath.swift"; sourceTree = "<group>"; };
+		6736D4F9273D95C500564FC1 /* SearchAlbumUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlbumUseCase.swift; sourceTree = "<group>"; };
+		6736D4FB273D96CF00564FC1 /* FavoriteLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLocalDataSource.swift; sourceTree = "<group>"; };
+		6736D4FD273D970700564FC1 /* FavoriteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepository.swift; sourceTree = "<group>"; };
+		6736D501273D9E8900564FC1 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		6736D503273D9EBD00564FC1 /* SearchRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemoteDataSource.swift; sourceTree = "<group>"; };
+		6745CD56271FB14100578268 /* FavoriteLocalDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLocalDataSourceSpec.swift; sourceTree = "<group>"; };
+		6748E3B62730468700E46499 /* Mirror+CopyAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mirror+CopyAttributes.swift"; sourceTree = "<group>"; };
+		6748E3BB27304F5A00E46499 /* FavoriteLocalDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteLocalDataSourceImpl.swift; sourceTree = "<group>"; };
+		6748E3BD27304F6C00E46499 /* FavoriteRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepositoryImpl.swift; sourceTree = "<group>"; };
+		674C4516272D82C500B520CD /* SearchRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepositoryImpl.swift; sourceTree = "<group>"; };
+		674C451A272D85E000B520CD /* RepositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryFactory.swift; sourceTree = "<group>"; };
+		6781F719270BCAA400DAF479 /* Nimble+BeResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nimble+BeResult.swift"; sourceTree = "<group>"; };
+		6782094A2732B713006E2982 /* FavoriteRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteRepositorySpec.swift; sourceTree = "<group>"; };
+		67923EAF26729D8A0056FCC8 /* TouchTunes_Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TouchTunes_Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67923EB326729D8A0056FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67923EB826729D8A0056FCC8 /* TouchTunes Domain Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TouchTunes Domain Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67923EBD26729D8A0056FCC8 /* SearchRemoteDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemoteDataSourceSpec.swift; sourceTree = "<group>"; };
+		67923EBF26729D8A0056FCC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67923ED12672A61F0056FCC8 /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		67923ED32672A7040056FCC8 /* ITunesConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesConfig.swift; sourceTree = "<group>"; };
+		67923ED72672A8B50056FCC8 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		67923ED92672B2AF0056FCC8 /* SearchRemoteDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRemoteDataSourceImpl.swift; sourceTree = "<group>"; };
+		67923EDD2672B5AE0056FCC8 /* ITunesError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesError.swift; sourceTree = "<group>"; };
+		67923EE22672B9B70056FCC8 /* DataSourceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSourceFactory.swift; sourceTree = "<group>"; };
+		67923EE42672BD550056FCC8 /* SearchAlbumUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAlbumUseCaseImpl.swift; sourceTree = "<group>"; };
+		67923EE72672C1530056FCC8 /* UseCaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseFactory.swift; sourceTree = "<group>"; };
+		67923EEB2672D3E20056FCC8 /* SearchUseCaseSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCaseSpec.swift; sourceTree = "<group>"; };
+		67923EF12673F7DD0056FCC8 /* Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mock.swift; sourceTree = "<group>"; };
+		67923EF32673FAEE0056FCC8 /* ApiReference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiReference.swift; sourceTree = "<group>"; };
+		67923EF62673FE2E0056FCC8 /* search-success.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "search-success.json"; sourceTree = "<group>"; };
+		67EF2CDF2728376800BC4996 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		B2B3EE6A8595BD0C95965BA4 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TouchTunes Domain-TouchTunes Domain Tests.debug.xcconfig"; path = "Target Support Files/Pods-TouchTunes Domain-TouchTunes Domain Tests/Pods-TouchTunes Domain-TouchTunes Domain Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D04BA75B495458AFBD35B9EB /* Pods_TouchTunes_Domain_TouchTunes_Domain_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TouchTunes_Domain_TouchTunes_Domain_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		67923EAC26729D8A0056FCC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				169BCA057BA279E9275F8768 /* Pods_TouchTunes_Domain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67923EB526729D8A0056FCC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67923EB926729D8A0056FCC8 /* TouchTunes_Domain.framework in Frameworks */,
+				C6AE74A5BE5333076C33FEE4 /* Pods_TouchTunes_Domain_TouchTunes_Domain_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		260B9629551F77444E14309F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08640FD92DDF6637E167B843 /* Pods-TouchTunes Domain.debug.xcconfig */,
+				4DA6EE06F67BF5937BB15EC1 /* Pods-TouchTunes Domain.release.xcconfig */,
+				B2B3EE6A8595BD0C95965BA4 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.debug.xcconfig */,
+				3DC99F0E32C922CF88376EF6 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		671FE861272DCD5600357032 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				67923ED32672A7040056FCC8 /* ITunesConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		671FE864272DE28900357032 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				671FE865272DE2B700357032 /* SearchRepositoryMock.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		6736D4F4273D939500564FC1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6736D500273D9BA500564FC1 /* Favorite */,
+				6736D4FF273D9B9F00564FC1 /* Search */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6736D4FF273D9B9F00564FC1 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				6736D4F9273D95C500564FC1 /* SearchAlbumUseCase.swift */,
+				6736D501273D9E8900564FC1 /* SearchRepository.swift */,
+				6736D503273D9EBD00564FC1 /* SearchRemoteDataSource.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		6736D500273D9BA500564FC1 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				6736D4FB273D96CF00564FC1 /* FavoriteLocalDataSource.swift */,
+				6736D4FD273D970700564FC1 /* FavoriteRepository.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		6745CD55271FB12A00578268 /* LocalDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6745CD56271FB14100578268 /* FavoriteLocalDataSourceSpec.swift */,
+			);
+			path = LocalDataSource;
+			sourceTree = "<group>";
+		};
+		6748E3B52730467000E46499 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6748E3B62730468700E46499 /* Mirror+CopyAttributes.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6748E3B827304E8A00E46499 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				67923EF62673FE2E0056FCC8 /* search-success.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		6748E3B927304F3000E46499 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				6748E3BD27304F6C00E46499 /* FavoriteRepositoryImpl.swift */,
+				6748E3BA27304F3F00E46499 /* LocalDataSource */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		6748E3BA27304F3F00E46499 /* LocalDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6748E3BB27304F5A00E46499 /* FavoriteLocalDataSourceImpl.swift */,
+			);
+			path = LocalDataSource;
+			sourceTree = "<group>";
+		};
+		674C450F272D81A800B520CD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				6748E3B927304F3000E46499 /* Favorite */,
+				671FE861272DCD5600357032 /* Config */,
+				674C4518272D84E600B520CD /* Factory */,
+				674C4512272D81D300B520CD /* Search */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		674C4510272D81B000B520CD /* RemoteDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				67923ED12672A61F0056FCC8 /* SearchAPI.swift */,
+				67923ED92672B2AF0056FCC8 /* SearchRemoteDataSourceImpl.swift */,
+			);
+			path = RemoteDataSource;
+			sourceTree = "<group>";
+		};
+		674C4512272D81D300B520CD /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				674C4516272D82C500B520CD /* SearchRepositoryImpl.swift */,
+				671FE862272DD94D00357032 /* SearchRequest.swift */,
+				674C4510272D81B000B520CD /* RemoteDataSource */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		674C4518272D84E600B520CD /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				67923EE22672B9B70056FCC8 /* DataSourceFactory.swift */,
+				674C451A272D85E000B520CD /* RepositoryFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		674C451C272D902D00B520CD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				674C451F272D909000B520CD /* Util */,
+				674C451E272D906100B520CD /* Favorite */,
+				674C451D272D903D00B520CD /* Search */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		674C451D272D903D00B520CD /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				67923EE92672D3C80056FCC8 /* RemoteDataSource */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		674C451E272D906100B520CD /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				6782094A2732B713006E2982 /* FavoriteRepositorySpec.swift */,
+				6745CD55271FB12A00578268 /* LocalDataSource */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		674C451F272D909000B520CD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				671AF77B271FB70B00BC6292 /* TestCoreDataStack.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		6781F718270BCA9300DAF479 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				671FE867272DEE4000357032 /* JSONDecoder+AtKeyPath.swift */,
+				6781F719270BCAA400DAF479 /* Nimble+BeResult.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		6781F71C270BD35E00DAF479 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				67923EEB2672D3E20056FCC8 /* SearchUseCaseSpec.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		6782094C2732B732006E2982 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		67923EA526729D8A0056FCC8 = {
+			isa = PBXGroup;
+			children = (
+				67923EB126729D8A0056FCC8 /* Domain */,
+				67923EBC26729D8A0056FCC8 /* Domain Tests */,
+				67923EB026729D8A0056FCC8 /* Products */,
+				260B9629551F77444E14309F /* Pods */,
+				80A3F3C378751EE15446396D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		67923EB026729D8A0056FCC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				67923EAF26729D8A0056FCC8 /* TouchTunes_Domain.framework */,
+				67923EB826729D8A0056FCC8 /* TouchTunes Domain Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		67923EB126729D8A0056FCC8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				67923ECA26729E7F0056FCC8 /* Supporting Files */,
+				67923EC926729E750056FCC8 /* Source */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		67923EBC26729D8A0056FCC8 /* Domain Tests */ = {
+			isa = PBXGroup;
+			children = (
+				67923ECB26729E990056FCC8 /* Supporting Files */,
+				67923ECC26729EAA0056FCC8 /* Source */,
+			);
+			path = "Domain Tests";
+			sourceTree = "<group>";
+		};
+		67923EC926729E750056FCC8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6736D4F4273D939500564FC1 /* Protocols */,
+				6748E3B52730467000E46499 /* Extensions */,
+				674C450F272D81A800B520CD /* Data */,
+				67923ED52672A7130056FCC8 /* Error */,
+				67923ECD2672A5680056FCC8 /* Factory */,
+				67923ECE2672A56D0056FCC8 /* UseCase */,
+				67923ECF2672A5780056FCC8 /* Model */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		67923ECA26729E7F0056FCC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67923EB326729D8A0056FCC8 /* Info.plist */,
+				67EF2CDE2728376800BC4996 /* DataModel.xcdatamodeld */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67923ECB26729E990056FCC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67923EBF26729D8A0056FCC8 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		67923ECC26729EAA0056FCC8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				674C451C272D902D00B520CD /* Data */,
+				6782094C2732B732006E2982 /* Favorite */,
+				67923EF02673F7A70056FCC8 /* Mock */,
+				6781F71C270BD35E00DAF479 /* Search */,
+				6781F718270BCA9300DAF479 /* Util */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		67923ECD2672A5680056FCC8 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				67923EE72672C1530056FCC8 /* UseCaseFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		67923ECE2672A56D0056FCC8 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				67923EE42672BD550056FCC8 /* SearchAlbumUseCaseImpl.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		67923ECF2672A5780056FCC8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67923ED72672A8B50056FCC8 /* Album.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		67923ED52672A7130056FCC8 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				67923EDD2672B5AE0056FCC8 /* ITunesError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		67923EE92672D3C80056FCC8 /* RemoteDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				67923EBD26729D8A0056FCC8 /* SearchRemoteDataSourceSpec.swift */,
+			);
+			path = RemoteDataSource;
+			sourceTree = "<group>";
+		};
+		67923EF02673F7A70056FCC8 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				6748E3B827304E8A00E46499 /* Files */,
+				671FE864272DE28900357032 /* Repository */,
+				67923EF12673F7DD0056FCC8 /* Mock.swift */,
+				67923EF32673FAEE0056FCC8 /* ApiReference.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		80A3F3C378751EE15446396D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4463822BC4D2C30155C77C55 /* Pods_TouchTunes_Domain.framework */,
+				D04BA75B495458AFBD35B9EB /* Pods_TouchTunes_Domain_TouchTunes_Domain_Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		67923EAA26729D8A0056FCC8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		67923EAE26729D8A0056FCC8 /* TouchTunes Domain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67923EC326729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes Domain" */;
+			buildPhases = (
+				9E8B2418C9ABA33999647F95 /* [CP] Check Pods Manifest.lock */,
+				67923EAA26729D8A0056FCC8 /* Headers */,
+				67923EAB26729D8A0056FCC8 /* Sources */,
+				67923EAC26729D8A0056FCC8 /* Frameworks */,
+				67923EAD26729D8A0056FCC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TouchTunes Domain";
+			productName = "touchtunes-sdk";
+			productReference = 67923EAF26729D8A0056FCC8 /* TouchTunes_Domain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		67923EB726729D8A0056FCC8 /* TouchTunes Domain Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67923EC626729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes Domain Tests" */;
+			buildPhases = (
+				192642A479D74DA2982E6815 /* [CP] Check Pods Manifest.lock */,
+				67923EB426729D8A0056FCC8 /* Sources */,
+				67923EB526729D8A0056FCC8 /* Frameworks */,
+				67923EB626729D8A0056FCC8 /* Resources */,
+				AB8F395EC9897B2751EA79D6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				67923EBB26729D8A0056FCC8 /* PBXTargetDependency */,
+			);
+			name = "TouchTunes Domain Tests";
+			productName = "touchtunes-sdkTests";
+			productReference = 67923EB826729D8A0056FCC8 /* TouchTunes Domain Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		67923EA626729D8A0056FCC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					67923EAE26729D8A0056FCC8 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+					67923EB726729D8A0056FCC8 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+				};
+			};
+			buildConfigurationList = 67923EA926729D8A0056FCC8 /* Build configuration list for PBXProject "TouchTunes Domain" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 67923EA526729D8A0056FCC8;
+			productRefGroup = 67923EB026729D8A0056FCC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				67923EAE26729D8A0056FCC8 /* TouchTunes Domain */,
+				67923EB726729D8A0056FCC8 /* TouchTunes Domain Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		67923EAD26729D8A0056FCC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67923EB626729D8A0056FCC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67923EF72673FE2E0056FCC8 /* search-success.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		192642A479D74DA2982E6815 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TouchTunes Domain-TouchTunes Domain Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E8B2418C9ABA33999647F95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TouchTunes Domain-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AB8F395EC9897B2751EA79D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TouchTunes Domain-TouchTunes Domain Tests/Pods-TouchTunes Domain-TouchTunes Domain Tests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TouchTunes Domain-TouchTunes Domain Tests/Pods-TouchTunes Domain-TouchTunes Domain Tests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TouchTunes Domain-TouchTunes Domain Tests/Pods-TouchTunes Domain-TouchTunes Domain Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		67923EAB26729D8A0056FCC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6748E3BC27304F5A00E46499 /* FavoriteLocalDataSourceImpl.swift in Sources */,
+				67923EDE2672B5AE0056FCC8 /* ITunesError.swift in Sources */,
+				6748E3BE27304F6C00E46499 /* FavoriteRepositoryImpl.swift in Sources */,
+				6736D4FA273D95C500564FC1 /* SearchAlbumUseCase.swift in Sources */,
+				671FE863272DD94D00357032 /* SearchRequest.swift in Sources */,
+				67923EDA2672B2AF0056FCC8 /* SearchRemoteDataSourceImpl.swift in Sources */,
+				67EF2CE02728376800BC4996 /* DataModel.xcdatamodeld in Sources */,
+				6748E3B72730468700E46499 /* Mirror+CopyAttributes.swift in Sources */,
+				674C4517272D82C500B520CD /* SearchRepositoryImpl.swift in Sources */,
+				67923EE32672B9B70056FCC8 /* DataSourceFactory.swift in Sources */,
+				67923EE52672BD550056FCC8 /* SearchAlbumUseCaseImpl.swift in Sources */,
+				6736D4FE273D970700564FC1 /* FavoriteRepository.swift in Sources */,
+				674C451B272D85E000B520CD /* RepositoryFactory.swift in Sources */,
+				67923EE82672C1530056FCC8 /* UseCaseFactory.swift in Sources */,
+				67923ED42672A7040056FCC8 /* ITunesConfig.swift in Sources */,
+				67923ED82672A8B50056FCC8 /* Album.swift in Sources */,
+				6736D504273D9EBD00564FC1 /* SearchRemoteDataSource.swift in Sources */,
+				6736D4FC273D96CF00564FC1 /* FavoriteLocalDataSource.swift in Sources */,
+				67923ED22672A61F0056FCC8 /* SearchAPI.swift in Sources */,
+				6736D502273D9E8900564FC1 /* SearchRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67923EB426729D8A0056FCC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67923EED2672D4E10056FCC8 /* SearchUseCaseSpec.swift in Sources */,
+				67923EF42673FAEE0056FCC8 /* ApiReference.swift in Sources */,
+				671FE868272DEE4000357032 /* JSONDecoder+AtKeyPath.swift in Sources */,
+				67923EBE26729D8A0056FCC8 /* SearchRemoteDataSourceSpec.swift in Sources */,
+				671FE866272DE2B700357032 /* SearchRepositoryMock.swift in Sources */,
+				671AF77C271FB70B00BC6292 /* TestCoreDataStack.swift in Sources */,
+				671AF779271FB61400BC6292 /* FavoriteLocalDataSourceSpec.swift in Sources */,
+				6781F71B270BCAAA00DAF479 /* Nimble+BeResult.swift in Sources */,
+				67EF2CE12728376800BC4996 /* DataModel.xcdatamodeld in Sources */,
+				67923EF22673F7DD0056FCC8 /* Mock.swift in Sources */,
+				6782094B2732B713006E2982 /* FavoriteRepositorySpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		67923EBB26729D8A0056FCC8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67923EAE26729D8A0056FCC8 /* TouchTunes Domain */;
+			targetProxy = 67923EBA26729D8A0056FCC8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		67923EC126729D8A0056FCC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		67923EC226729D8A0056FCC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67923EC426729D8A0056FCC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08640FD92DDF6637E167B843 /* Pods-TouchTunes Domain.debug.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3FQU58AQ88;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Domain/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neymoura.touchtunes.domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67923EC526729D8A0056FCC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA6EE06F67BF5937BB15EC1 /* Pods-TouchTunes Domain.release.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 3FQU58AQ88;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Domain/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neymoura.touchtunes.domain;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		67923EC726729D8A0056FCC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B3EE6A8595BD0C95965BA4 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3FQU58AQ88;
+				INFOPLIST_FILE = "Domain Tests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neymoura.touchtunes.sdk.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		67923EC826729D8A0056FCC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DC99F0E32C922CF88376EF6 /* Pods-TouchTunes Domain-TouchTunes Domain Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 3FQU58AQ88;
+				INFOPLIST_FILE = "Domain Tests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dev.neymoura.touchtunes.sdk.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		67923EA926729D8A0056FCC8 /* Build configuration list for PBXProject "TouchTunes Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67923EC126729D8A0056FCC8 /* Debug */,
+				67923EC226729D8A0056FCC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67923EC326729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes Domain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67923EC426729D8A0056FCC8 /* Debug */,
+				67923EC526729D8A0056FCC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67923EC626729D8A0056FCC8 /* Build configuration list for PBXNativeTarget "TouchTunes Domain Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67923EC726729D8A0056FCC8 /* Debug */,
+				67923EC826729D8A0056FCC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		67EF2CDE2728376800BC4996 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				67EF2CDF2728376800BC4996 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 67EF2CDF2728376800BC4996 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 67923EA626729D8A0056FCC8 /* Project object */;
+}
