@@ -7,11 +7,6 @@
 
 import CoreData
 
-protocol FavoriteLocalDataSource {
-    func saveAlbum(album: Album, completion: (Result<Void, ITunesError>) -> Void)
-    func fetchAlbums(completion: (Result<[Album], ITunesError>) -> Void)
-}
-
 class FavoriteLocalDataSourceImpl {
     
     let container: NSPersistentContainer

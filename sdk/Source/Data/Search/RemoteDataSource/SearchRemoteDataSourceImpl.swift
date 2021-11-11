@@ -7,11 +7,7 @@
 
 import Moya
 
-protocol SearchRemoteDataSource {
-    func search<T>(request: SearchRequest,
-                   returning: T.Type,
-                   callback: @escaping (Result<[T], ITunesError>) -> Void) where T: Codable
-}
+
 
 class SearchRemoteDataSourceImpl {
     

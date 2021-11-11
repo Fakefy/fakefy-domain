@@ -5,10 +5,6 @@
 //  Created by Ney Moura on 10/06/21.
 //
 
-public protocol SearchAlbumUseCase {
-    func searchAlbum(with term: String, country: String, callback: @escaping (Result<[Album], ITunesError>) -> Void)
-}
-
 class SearchAlbumUseCaseImpl {
     
     private let searchRepository: SearchRepository
