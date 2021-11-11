@@ -5,12 +5,6 @@
 //  Created by Ney Moura on 30/10/21.
 //
 
-protocol SearchRepository: AnyObject {
-    func search<T>(request: SearchRequest,
-                   returning: T.Type,
-                   callback: @escaping (Result<[T], ITunesError>) -> Void) where T: Codable
-}
-
 class SearchRepositoryImpl {
     let remoteDataSource: SearchRemoteDataSource
     

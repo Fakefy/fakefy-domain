@@ -5,4 +5,8 @@
 //  Created by Ney Moura on 11/11/21.
 //
 
-import Foundation
+protocol SearchRemoteDataSource {
+    func search<T>(request: SearchRequest,
+                   returning: T.Type,
+                   callback: @escaping (Result<[T], ITunesError>) -> Void) where T: Codable
+}

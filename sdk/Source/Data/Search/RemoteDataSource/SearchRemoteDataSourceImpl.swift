@@ -7,8 +7,6 @@
 
 import Moya
 
-
-
 class SearchRemoteDataSourceImpl {
     
     private let provider: MoyaProvider<SearchAPI>
