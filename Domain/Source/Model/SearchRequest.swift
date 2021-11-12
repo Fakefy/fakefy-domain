@@ -5,7 +5,7 @@
 //  Created by Ney Moura on 30/10/21.
 //
 
-struct SearchRequest {
+public struct SearchRequest {
     let term: String
     let country: String
     let media: String
