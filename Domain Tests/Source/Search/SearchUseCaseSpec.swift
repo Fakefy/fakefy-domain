@@ -33,7 +33,7 @@ extension SearchUseCaseSpec {
         // Given
         class RepositoryMock: SearchRepository {
             func search<T>(request: SearchRequest, returning: T.Type, callback: @escaping (Result<[T], ITunesError>) -> Void) where T : Codable {
-                let data = Mock.dataFromJson(named: "search-success")
+                let data = Mock().dataFromJson(named: "search-success")
                 let searchResult = try! JSONDecoder().decode([T].self, from: data, atKeyPath: "results")
                 callback(Result.success(searchResult))
             }

@@ -6,7 +6,7 @@
 //
 
 class UseCaseFactory {
-    public static func makeSearchUseCase(searchRepository: SearchRepository = RepositoryFactory.makeSearchRepository()) -> SearchAlbumUseCase {
+    public static func makeSearchUseCase(searchRepository: SearchRepository) -> SearchAlbumUseCase {
         return SearchAlbumUseCaseImpl(searchRepository: searchRepository)
     }
 }
