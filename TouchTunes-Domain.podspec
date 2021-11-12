@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target  = "14.5"
 
   spec.source        = { :git => "https://github.com/neymoura/touchtunes-domain.git", :tag => "#{spec.version}" }
-  spec.source_files  = "Classes", "sdk/**/*.{h,m,swift}"
+  spec.source_files  = "Classes", "Domain/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
   spec.dependency "Moya", "14.0.0"
