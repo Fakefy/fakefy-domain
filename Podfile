@@ -2,7 +2,6 @@ platform :ios, '14.5'
 inhibit_all_warnings!
 
 def default_pods
-  pod 'Moya', '14.0.0'
 end
 
 target 'TouchTunes Domain' do
