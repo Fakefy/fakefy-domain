@@ -1,6 +1,6 @@
 //
 //  SearchRequest.swift
-//  TouchTunes SDK
+//  Fakefy Domain
 //
 //  Created by Ney Moura on 30/10/21.
 //

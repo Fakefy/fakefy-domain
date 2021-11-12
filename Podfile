@@ -4,11 +4,11 @@ inhibit_all_warnings!
 def default_pods
 end
 
-target 'TouchTunes Domain' do
+target 'FakefyDomain' do
   use_frameworks!
   default_pods
 
-  target 'TouchTunes Domain Tests' do
+  target 'FakefyDomain Tests' do
     pod 'Quick', '4.0.0'
     pod 'Nimble', '9.2.0'
   end

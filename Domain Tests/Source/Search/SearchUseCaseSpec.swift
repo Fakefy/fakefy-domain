@@ -1,6 +1,6 @@
 //
 //  SearchUseCaseSpec.swift
-//  TouchTunes SDK
+//  Fakefy Domain
 //
 //  Created by Ney Moura on 10/06/21.
 //
@@ -8,7 +8,7 @@
 import Nimble
 import Quick
 
-@testable import TouchTunes_Domain
+@testable import FakefyDomain
 
 class SearchUseCaseSpec: QuickSpec {
     override func spec() {
