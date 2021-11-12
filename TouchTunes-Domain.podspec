@@ -14,6 +14,4 @@ Pod::Spec.new do |spec|
   spec.source        = { :git => "https://github.com/neymoura/touchtunes-domain.git", :tag => "#{spec.version}" }
   spec.source_files  = "Classes", "Domain/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
-
-  spec.dependency "Moya", "14.0.0"
 end
