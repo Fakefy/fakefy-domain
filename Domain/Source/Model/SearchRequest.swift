@@ -6,9 +6,9 @@
 //
 
 public struct SearchRequest {
-    let term: String
-    let country: String
-    let media: String
-    let entity: String
-    let attribute: String
+    public let term: String
+    public let country: String
+    public let media: String
+    public let entity: String
+    public let attribute: String
 }
