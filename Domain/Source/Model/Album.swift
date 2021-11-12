@@ -24,8 +24,8 @@ public struct Album: Codable {
     public let country: String
     public let currency: String
     public let primaryGenreName: String
-
-    enum CodingKeys: String, CodingKey {
+    
+    public enum CodingKeys: String, CodingKey {
         case wrapperType = "wrapperType"
         case artistId = "artistId"
         case collectionId = "collectionId"
@@ -44,5 +44,43 @@ public struct Album: Codable {
         case country = "country"
         case currency = "currency"
         case primaryGenreName = "primaryGenreName"
+    }
+    
+    public init(wrapperType: String,
+                artistId: Int,
+                collectionId: Int,
+                artistName: String,
+                collectionName: String,
+                collectionCensoredName: String,
+                artistViewUrl: String,
+                collectionViewUrl: String,
+                artworkUrl60: String?,
+                artworkUrl100: String?,
+                collectionPrice: Double,
+                collectionExplicitness: String,
+                trackCount: Int,
+                copyright: String?,
+                releaseDate: String?,
+                country: String,
+                currency: String,
+                primaryGenreName: String) {
+        self.wrapperType = wrapperType
+        self.artistId = artistId
+        self.collectionId = collectionId
+        self.artistName = artistName
+        self.collectionName = collectionName
+        self.collectionCensoredName = collectionCensoredName
+        self.artistViewUrl = artistViewUrl
+        self.collectionViewUrl = collectionViewUrl
+        self.artworkUrl60 = artworkUrl60
+        self.artworkUrl100 = artworkUrl100
+        self.collectionPrice = collectionPrice
+        self.collectionExplicitness = collectionExplicitness
+        self.trackCount = trackCount
+        self.copyright = copyright
+        self.releaseDate = releaseDate
+        self.country = country
+        self.currency = currency
+        self.primaryGenreName = primaryGenreName
     }
 }
