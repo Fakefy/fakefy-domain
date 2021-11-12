@@ -289,6 +289,21 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		67658E20273E9679001C0F71 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				67923EE42672BD550056FCC8 /* SearchAlbumUseCaseImpl.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		67658E21273E9680001C0F71 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
 		6781F718270BCA9300DAF479 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,7 +420,8 @@
 		67923ECE2672A56D0056FCC8 /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
-				67923EE42672BD550056FCC8 /* SearchAlbumUseCaseImpl.swift */,
+				67658E21273E9680001C0F71 /* Favorite */,
+				67658E20273E9679001C0F71 /* Search */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
