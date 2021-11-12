@@ -7,14 +7,14 @@
 
 public struct ITunesError: Error {
 
-    enum ErrorType: CaseIterable {
+    public enum ErrorType: CaseIterable {
         case generic
         case encoding
     }
     
-    let type: ErrorType
+    public let type: ErrorType
         
-    init(type: ErrorType = .generic) {
+    public init(type: ErrorType = .generic) {
         self.type = type
     }
 }

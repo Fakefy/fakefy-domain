@@ -95,6 +95,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		671E9418273EC90E002F0BB3 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				67923EE72672C1530056FCC8 /* UseCaseFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
 		671FE864272DE28900357032 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +177,7 @@
 		67923EC926729E750056FCC8 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				671E9418273EC90E002F0BB3 /* Factory */,
 				67F33553273EAEE400F6ED80 /* Favorite */,
 				67F33552273EAEDE00F6ED80 /* Search */,
 				67923ED52672A7130056FCC8 /* Error */,
@@ -234,7 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				67923EE42672BD550056FCC8 /* SearchAlbumUseCaseImpl.swift */,
-				67923EE72672C1530056FCC8 /* UseCaseFactory.swift */,
 				6736D4F9273D95C500564FC1 /* SearchAlbumUseCase.swift */,
 				6736D501273D9E8900564FC1 /* SearchRepository.swift */,
 			);
