@@ -3,8 +3,8 @@
 # Exit on error
 set -eo pipefail
 
-SCHEME='TouchTunes Domain'
-WORKSPACE='TouchTunes Domain.xcworkspace'
+SCHEME='FakefyDomain'
+WORKSPACE='FakefyDomain.xcworkspace'
 
 DESTINATION='platform=iOS Simulator,name=iPhone 13,OS=15.0'
 

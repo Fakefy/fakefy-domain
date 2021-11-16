@@ -32,7 +32,7 @@
 			containerPortal = 67923EA626729D8A0056FCC8 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 67923EAE26729D8A0056FCC8;
-			remoteInfo = "touchtunes-sdk";
+			remoteInfo = "FakefyDomain";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -294,7 +294,7 @@
 			dependencies = (
 			);
 			name = FakefyDomain;
-			productName = "touchtunes-sdk";
+			productName = "FakefyDomain";
 			productReference = 67923EAF26729D8A0056FCC8 /* FakefyDomain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -314,7 +314,7 @@
 				67923EBB26729D8A0056FCC8 /* PBXTargetDependency */,
 			);
 			name = "FakefyDomain Tests";
-			productName = "touchtunes-sdkTests";
+			productName = "FakefyDomainTests";
 			productReference = 67923EB826729D8A0056FCC8 /* FakefyDomain Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
