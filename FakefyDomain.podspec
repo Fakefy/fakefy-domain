@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name          = "FakefyDomain"
-  spec.version       = "0.0.3"
+  spec.version       = "0.0.4"
   spec.summary       = "Fakefy Domain"
   spec.description   = "Fakefy Domain module"
 
