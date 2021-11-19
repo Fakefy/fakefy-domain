@@ -12,7 +12,7 @@ public struct Album: Codable {
     public let artistName: String
     public let collectionName: String
     public let collectionCensoredName: String
-    public let artistViewUrl: String
+    public let artistViewUrl: String?
     public let collectionViewUrl: String
     public let artworkUrl60: String?
     public let artworkUrl100: String?
@@ -52,7 +52,7 @@ public struct Album: Codable {
                 artistName: String,
                 collectionName: String,
                 collectionCensoredName: String,
-                artistViewUrl: String,
+                artistViewUrl: String?,
                 collectionViewUrl: String,
                 artworkUrl60: String?,
                 artworkUrl100: String?,
